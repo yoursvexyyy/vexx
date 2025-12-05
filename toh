@@ -135,12 +135,10 @@ local killTags = {"kill", "laser", "death", "lava"}
 local godmodeOn = false
 local connections = {}
 
--- INFINITE JUMPS SYSTEM - FIXED FOR MOBILE
+-- INFINITE JUMPS SYSTEM - SIMPLE & WORKING VERSION
 local infiniteJumpsEnabled = false
 local infiniteJumpsConnection = nil
 local UserInputService = game:GetService("UserInputService")
-local ContextActionService = game:GetService("ContextActionService")
-local RunService = game:GetService("RunService")
 
 local function setupInfiniteJumps(enabled)
     if infiniteJumpsConnection then
@@ -148,31 +146,8 @@ local function setupInfiniteJumps(enabled)
         infiniteJumpsConnection = nil
     end
     
-    -- Remove any existing jump action
-    ContextActionService:UnbindAction("MobileJumpAction")
-    
     if enabled then
-        -- For mobile: Bind jump to a custom action
-        ContextActionService:BindAction("MobileJumpAction", function(actionName, inputState, inputObject)
-            if inputState == Enum.UserInputState.Begin then
-                local character = player.Character
-                if not character then return end
-                
-                local humanoid = character:FindFirstChild("Humanoid")
-                if not humanoid then return end
-                
-                humanoid.Jump = true
-                
-                local rootPart = character:FindFirstChild("HumanoidRootPart")
-                if rootPart then
-                    local currentVelocity = rootPart.Velocity
-                    rootPart.Velocity = Vector3.new(currentVelocity.X, 50, currentVelocity.Z)
-                end
-            end
-        end, false, Enum.KeyCode.ButtonA, Enum.KeyCode.ButtonX, Enum.KeyCode.ButtonY, Enum.KeyCode.ButtonB)
-        
-        -- For PC: Use the original method but also add a Heartbeat check for reliability
-        infiniteJumpsConnection = RunService.Heartbeat:Connect(function()
+        infiniteJumpsConnection = game:GetService("RunService").Heartbeat:Connect(function()
             if not infiniteJumpsEnabled then return end
             
             local character = player.Character
@@ -181,14 +156,45 @@ local function setupInfiniteJumps(enabled)
             local humanoid = character:FindFirstChild("Humanoid")
             if not humanoid then return end
             
-            -- Check if space is pressed (PC) OR we're using mobile
-            if UserInputService:IsKeyDown(Enum.KeyCode.Space) then
-                humanoid.Jump = true
+            -- Get the current humanoid state
+            local state = humanoid:GetState()
+            
+            -- If we're in the air (falling or jumping)
+            if state == Enum.HumanoidStateType.Freefall or state == Enum.HumanoidStateType.Jumping then
+                -- Check for jump input
+                local jumpPressed = false
                 
-                local rootPart = character:FindFirstChild("HumanoidRootPart")
-                if rootPart then
-                    local currentVelocity = rootPart.Velocity
-                    rootPart.Velocity = Vector3.new(currentVelocity.X, 50, currentVelocity.Z)
+                -- Check PC keyboard (Space key)
+                if UserInputService:IsKeyDown(Enum.KeyCode.Space) then
+                    jumpPressed = true
+                end
+                
+                -- Check mobile touch screen
+                if UserInputService.TouchEnabled then
+                    -- Check if there are any active touch inputs
+                    local touches = UserInputService:GetTouchInputs()
+                    if #touches > 0 then
+                        -- Simple touch detection for jump (anywhere on screen)
+                        jumpPressed = true
+                    end
+                end
+                
+                -- Also check for jump button press via gamepad
+                if UserInputService:IsGamepadButtonDown(Enum.UserInputType.Gamepad1, Enum.KeyCode.ButtonA) or
+                   UserInputService:IsGamepadButtonDown(Enum.UserInputType.Gamepad1, Enum.KeyCode.ButtonX) then
+                    jumpPressed = true
+                end
+                
+                -- Make character jump
+                if jumpPressed then
+                    humanoid.Jump = true
+                    
+                    -- Add upward velocity for better jumps
+                    local rootPart = character:FindFirstChild("HumanoidRootPart")
+                    if rootPart then
+                        local currentVelocity = rootPart.Velocity
+                        rootPart.Velocity = Vector3.new(currentVelocity.X, 50, currentVelocity.Z)
+                    end
                 end
             end
         end)
@@ -277,7 +283,7 @@ Tabs.Main:Toggle({
     end
 })
 
--- Infinite Jumps Toggle - FIXED FOR MOBILE
+-- In the toggle callback:
 Tabs.Main:Toggle({
     Title = "Infinite Jumps",
     Desc = "Jump unlimited times in mid-air",
@@ -288,7 +294,7 @@ Tabs.Main:Toggle({
         
         WindUI:Notify({
             Title = "Infinite Jumps",
-            Content = state and "Enabled! (Works on PC & Mobile)" or "Disabled",
+            Content = state and "Enabled! (Press space/jump button in air)" or "Disabled",
             Duration = 4,
             Icon = state and "wind" or "wind-off"
         })
