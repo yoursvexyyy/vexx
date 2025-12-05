@@ -135,79 +135,10 @@ local killTags = {"kill", "laser", "death", "lava"}
 local godmodeOn = false
 local connections = {}
 
--- INFINITE JUMPS SYSTEM - SIMPLE & WORKING VERSION
+-- INFINITE JUMPS SYSTEM - EXACT WORKING FIX
 local infiniteJumpsEnabled = false
 local infiniteJumpsConnection = nil
 local UserInputService = game:GetService("UserInputService")
-
-local function setupInfiniteJumps(enabled)
-    if infiniteJumpsConnection then
-        infiniteJumpsConnection:Disconnect()
-        infiniteJumpsConnection = nil
-    end
-    
-    if enabled then
-        infiniteJumpsConnection = game:GetService("RunService").Heartbeat:Connect(function()
-            if not infiniteJumpsEnabled then return end
-            
-            local character = player.Character
-            if not character then return end
-            
-            local humanoid = character:FindFirstChild("Humanoid")
-            if not humanoid then return end
-            
-            -- Get the current humanoid state
-            local state = humanoid:GetState()
-            
-            -- If we're in the air (falling or jumping)
-            if state == Enum.HumanoidStateType.Freefall or state == Enum.HumanoidStateType.Jumping then
-                -- Check for jump input
-                local jumpPressed = false
-                
-                -- Check PC keyboard (Space key)
-                if UserInputService:IsKeyDown(Enum.KeyCode.Space) then
-                    jumpPressed = true
-                end
-                
-                -- Check mobile touch screen
-                if UserInputService.TouchEnabled then
-                    -- Check if there are any active touch inputs
-                    local touches = UserInputService:GetTouchInputs()
-                    if #touches > 0 then
-                        -- Simple touch detection for jump (anywhere on screen)
-                        jumpPressed = true
-                    end
-                end
-                
-                -- Also check for jump button press via gamepad
-                if UserInputService:IsGamepadButtonDown(Enum.UserInputType.Gamepad1, Enum.KeyCode.ButtonA) or
-                   UserInputService:IsGamepadButtonDown(Enum.UserInputType.Gamepad1, Enum.KeyCode.ButtonX) then
-                    jumpPressed = true
-                end
-                
-                -- Make character jump
-                if jumpPressed then
-                    humanoid.Jump = true
-                    
-                    -- Add upward velocity for better jumps
-                    local rootPart = character:FindFirstChild("HumanoidRootPart")
-                    if rootPart then
-                        local currentVelocity = rootPart.Velocity
-                        rootPart.Velocity = Vector3.new(currentVelocity.X, 50, currentVelocity.Z)
-                    end
-                end
-            end
-        end)
-    end
-end
-
--- Handle character respawns for infinite jumps
-player.CharacterAdded:Connect(function(char)
-    task.wait(0.5) -- Wait for character to load
-    if infiniteJumpsEnabled then
-        setupInfiniteJumps(true)
-    end
-end)
 
 local function isKillPart(part)
     if part:IsA("BasePart") then
@@ -262,6 +193,61 @@ local function applyGodmode(enabled)
     end
 end
 
+-- INFINITE JUMPS FIXED FUNCTION
+local function setupInfiniteJumps(enabled)
+    if infiniteJumpsConnection then
+        infiniteJumpsConnection:Disconnect()
+        infiniteJumpsConnection = nil
+    end
+    
+    if enabled then
+        infiniteJumpsConnection = game:GetService("RunService").Heartbeat:Connect(function()
+            if not infiniteJumpsEnabled then return end
+            
+            local character = player.Character
+            if not character then return end
+            
+            local humanoid = character:FindFirstChild("Humanoid")
+            if not humanoid then return end
+            
+            -- Check if player is pressing space (PC) or screen (Mobile)
+            local spacePressed = UserInputService:IsKeyDown(Enum.KeyCode.Space)
+            
+            -- Check for touch input on mobile
+            if UserInputService.TouchEnabled then
+                local touches = UserInputService:GetTouchInputs()
+                if #touches > 0 then
+                    spacePressed = true
+                end
+            end
+            
+            -- Check if we're in the air
+            local state = humanoid:GetState()
+            local inAir = (state == Enum.HumanoidStateType.Freefall or state == Enum.HumanoidStateType.Jumping)
+            
+            -- If in air and pressing jump, make character jump
+            if inAir and spacePressed then
+                humanoid.Jump = true
+                
+                -- Add upward velocity
+                local rootPart = character:FindFirstChild("HumanoidRootPart")
+                if rootPart then
+                    local currentVelocity = rootPart.Velocity
+                    rootPart.Velocity = Vector3.new(currentVelocity.X, 50, currentVelocity.Z)
+                end
+            end
+        end)
+    end
+end
+
+-- Handle character respawns for infinite jumps
+player.CharacterAdded:Connect(function(char)
+    task.wait(0.5) -- Wait for character to load
+    if infiniteJumpsEnabled then
+        setupInfiniteJumps(true)
+    end
+end)
+
 -- Main Tab Section
 Tabs.Main:Section({ Title = "Main Features" })
 
@@ -283,7 +269,7 @@ Tabs.Main:Toggle({
     end
 })
 
--- In the toggle callback:
+-- Infinite Jumps Toggle - WORKING FIX
 Tabs.Main:Toggle({
     Title = "Infinite Jumps",
     Desc = "Jump unlimited times in mid-air",
@@ -294,7 +280,7 @@ Tabs.Main:Toggle({
         
         WindUI:Notify({
             Title = "Infinite Jumps",
-            Content = state and "Enabled! (Press space/jump button in air)" or "Disabled",
+            Content = state and "Enabled! (Press jump in air)" or "Disabled",
             Duration = 4,
             Icon = state and "wind" or "wind-off"
         })
@@ -488,5 +474,4 @@ game:GetService("Players").LocalPlayer.CharacterRemoving:Connect(function()
         infiniteJumpsConnection:Disconnect()
         infiniteJumpsConnection = nil
     end
-    ContextActionService:UnbindAction("MobileJumpAction")
 end)
