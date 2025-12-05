@@ -246,7 +246,7 @@ Tabs.Main:Section({ Title = "Main Features" })
 
 -- Godmode Toggle
 Tabs.Main:Toggle({
-    Title = "Godmode",
+    Title = "Godmode (SAFE)",
     Desc = "Makes you immune to all lasers",
     Value = false,
     Callback = function(state)
@@ -264,7 +264,7 @@ Tabs.Main:Toggle({
 
 -- Infinite Jumps Toggle
 Tabs.Main:Toggle({
-    Title = "Infinite Jumps",
+    Title = "Infinite Jumps (SAFE)",
     Desc = "Jump unlimited times in mid-air",
     Value = false,
     Callback = function(state)
@@ -282,7 +282,7 @@ Tabs.Main:Toggle({
 
 -- Teleport to Top (Auto Win)
 Tabs.Main:Button({
-    Title = "Teleport to Top",
+    Title = "Teleport to Top (RISKY)",
     Desc = "Use this after timer crosses 6:00",
     Callback = function()
         local character = player.Character or player.CharacterAdded:Wait()
