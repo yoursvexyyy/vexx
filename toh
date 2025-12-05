@@ -1,6 +1,3 @@
--- Load WindUI
-local WindUI = loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/releases/latest/download/main.lua"))()
-
 -- Anti-Cheat Bypass (placed safely)
 task.spawn(function()
     local success, err = pcall(function()
@@ -52,4 +49,2553 @@ task.spawn(function()
     end
 end)
 
-return(function(...)local e,M,f=table,string,bit local o,a,l,s,R,O,P,Q,i,n,t=M.byte,M.char,M.sub,e.concat,e.insert,math.ldexp,getfenv and getfenv()or _ENV,setmetatable,select,unpack or e.unpack,tonumber;local d=(function(c)local M,d,N,L,n,t,o=1,function(N)local M=""for L=1,#N,1 do M=M..a(o(N,L)-(27))end return t(M,36)end,"","",{},256,{}for M=0,t-1 do o[M]=a(M)end;local function f()local N=d(l(c,M,M))M=M+1;local L=d(l(c,M,M+N-1))M=M+N;return L end;N=a(f())n[1]=N;while M<#c do local M=f()if o[M]then L=o[M]else L=N..l(N,1,1)end;o[t]=N..l(L,1,1)n[#n+1],N,t=L,L,t+1 end;return e.concat(n)end)("MOKMQeMRPMQcMQiMRPMQeMNrMNpMNlMNtMQcMQfMRTMPRMNmMNpMOMMNtMOTMOSMQcMQSMRTMOiMNjMNnMNpMNmMRdMRfMRhMRRMRTMOgMR^MR`MRlMRPMOqMNhMOSMO]MReMOMMSMMR_MQcMQTMRTMOnMNtMOaMPOMRhMO_MNhMNnMR`MQsMRTMOhMNpMOTMNfMSeMS\\MNpMSkMSgMOTMSiMSkMQcMQ_MScMSeMPRMOTMNjMNuMO`MNnMOaMOdMNkMNsMNjMRaMRcMReMSkMOdMNuMQcMQgMRTMPSMNhMNkMNuMP\\MOdMQcMQaMRTMOjMOTMNtMNpMOaMNtMToMTqMNjMO^MQcMQhMRTMP]MNhMOaMNmMR`MTmMRPMPTMOpMOuMPiMPdMPiMTlMRTMOlMO`MOaMNiMNjMOTMQcMQ`MRcM\\NMNlMNhMO`MNlMPiMOkMO`MNhMNmMTkMRSMRPMOdMNnMNjMNkMQcMQjMRTMOTMNoMONMNpMOSMOSMSeMNhMNuMPoMPbMPbMPqMQPMPpMQQMPqMPqMQKMQRMQRMQPMQKMQLMQOMQRM\\nMRPMOoMNjM]^MRuM]`MQeMPTMNtMONM\\mM^eMPOMNhMOLMR`M\\_MRPMP\\MSRMNlMQLMSaMRTMNsMT\\MNlMOfMNsMNsM]nMOaMRTMRTMOmMOOMOmM_\\MRPL]MO`MOmMRkM\\`MOTMNpMNkMSTMSpMNtMNkMOaMQdMQeM\\^M\\`MNiMNtMS`M^eMOqMSpMNfMQcMQrMRTMOeM]pMNtMPRM_iMNtMNmMOkMSuMNfMNrMT\\MO`MTqMQdMQdM_fMRPMOgMNtMO^MOpM\\dMR_M_nMRjMRbMRPMOlMNnMOTMOMMNmMSjM]KM`RM`TMSgMSpMNnMNiM`aM\\uM\\KMRPM^lMNuMNtMa_MToMNuM\\rM_aMRPMNhM_eMTQMRPMOpMNuM\\bMOfMO]M_mM]TMOaMOaM]dMTfMaoMNkMNpMNoM\\dM]_MRTMOaM]lM`OM^pMQeMadMS]MajMQeMP_M_eM`tMQeMSRMOSM]cMOTMTkMQbM\\`MbRM_rMRPMO`M]nMRiMSKMRPMSoMTpMbsMQeMNsMReMS`M\\fMQeMRsMRgM\\uM^eMbuMRuMbiMSgMT`MNhMbNMQ\\M\\LMNjMNlMNlM`fM\\bMOMMQcMcjMRPM`]M_hM`dMNpMO]MNiMcMMbjMNtMblMQcMPtMRTMOcMNjMTpMPiMNjMO`MOTMPiMbkMbmMNuMPiMbMMPiMNrMSeMPiMNlM\\tMNtMdaMNsMdiM_tMPiMNoMdRMOaMPiMblMOTMNhMO]MOaMOSMPiM_iMdhMO`MO]MNuM\\PMdRMPhMcQMOdMNlMNpMdlM]fM]hM]jM]lM_SM]pM]rM]tMQLMQLMQKMQKMPpMPqMQNMQQMQNMQKMQPMQMMQQMcrMRTMegMeiMNtM^lM^nMbeMOgM_eMbaMOjM^bM\\tMQcMbpMRPMPPMNtMTkMbiMbKMbMM_jM`jMQeMfgMO]MOMMPiMTbMSiM\\QMdPM]cMgLMbOM^fMSpMNhM_iMOaMQcMQ]M\\`MRhMOaMg_MaMMgbM\\LMRqMNmMNoM`bMf\\MRPMOjMNiMSpMSuM\\QM\\uManMfuMgrM_hMT`MRhMOlMNuMadMb\\MRPMPSMNpM\\bMTuMTnMh_MOaM^aMOTMgqM]]MTkMgcMRPMOeM]QM_iMd_Mh\\MQeMNfM]]MNmMcQMReMcKMcQMadM\\PMdOM^eMReMO_MNpMQcMQuMRTMP\\McKMTbMO]M\\qMTLMTNMR`MSbMflM`fMidMSjMR`MbiMfgMNkMNkMNtMT`MaQMcNMh_MNkMPiMOoM\\OMOaMdcMdRM^_MQeMP]MNjMNrMNrM\\dMg\\MOnMT]MdoMadMQcMQoMSnMNpMSrMe\\MOMMdbMPiMNhMcmM`fMdqMdjMgkMPiMiKMRhMRjMbaMPTMRqMO`MR`MhLMTbMNsMTpM\\bMdqMOcM]QMO]MRjMQnMd]Mk`MPiM`fMaOM]OM\\QMdhMgfMR_Me\\Md`M]OMNuMPdMh_M\\uMc]MfqMbNMQ^MgdM\\dMO]M\\tMeNMdjMjTMO]MQcMPhMi^M]nMdtMSSMe]MNsMguMdiMjnMRhMPiMaLMNjM]mMdRMPiMQPMPoMQNMQNMQcMQtMSnMNjMO_M_uM_mMeNMSgMbLMTpMNrMOSMbeMQNM_eMc]MPOMaOMadM\\uMcsMQeMh^MNmMNfMPOMatMfnMQcMPlM\\oMNuMNgMbuMeNMjkMdcMliMhNMgtMRhMPjMe\\MO^MRqMhrMNkMNrMeOMmjMhpMPOM\\QMO]MbeLmMPrMfjMSnMcPMfkMQeMSoMONMbeMOtMbhMRTMOqMNtMNsMNpMO`MNmM_TMajMOdM_eMmdMk_MNlMO]MPRM\\\\MRuMPgMmnMmpMOSMmrMdbMddMa]MgsMhPMOTMnNMPiMmpMoQMPiMlPMO^MRhMbeMRNM_`MajMOMM_eMaaMjSMonM_mMijMTOMhjMQeMTbMo`M_iMTOMnhMipM\\]MmdMPOMaLMNtM_mMOnM]\\MjRMcuMmNMg\\MfgM\\NMpfMNhMftMf^MdlMlKMNkMbeMpuMOmMPRM_eMpQMoSMOSM\\bMchMptM_aMLRMOTMLRMQcMRLMRTM`aMNnM`cM`eMTqMP]M_hM_jMO]M_lMNkMNnMcqMpQMTsMplMipMa`MckMOTMqsMPPMNpMaqMbuMdPM^rMjnMbeMPcM_eMltMcNMdbM]nMpsMQMMOjMaOMqdM_KM]aMNkMibMOaMOkMNtMR]M]eMpKMiaM\\qMgqM_iMdlMTkMpaM`_MiqMOaMP]MbrMr^MhMMoeMguMfmMdoMSiMnSMPuM_pMQeMQsMNjMRTMsbMQeMPiMajMQcMshMajMbpMsiMQeMsgMRSMsoMskMRPM\\_MSmMQeMbpMsgMsoMbpMbpMTmMtLM\\_MbiMRTMbpM\\_MskMsoMRSMbpMgcMQsMQlMQeMTmMtOMNnMthMtlMmdMQeMRSMTmMtaMRPMRSMttMscMsuMQeMigMslMQeM\\_M\\_MSPMRPMbiM\\KMtLMgcM]LM_aMcjM^eMRTMgcMgcMcjMi]MQeMRbM\\KMgcMQNMPaMuiMQeMTQMlMMQNMQpMuoMi]MltMu^MQeM`QMuaMtoMajMueMQeMugMuTMuKMteMRPMgcMRMMRTMsoNLKSMqaMtLMcjMRKMRTMtLMSbMQmNLKRMuMM_qMQeMQuMPdMuoMRNMQeMulMPuMuoMtgMQkMQeMQNNLK]M]gMQqNLLQNLK]MutMjfNLLRMuoMkcNLLPNLLaMRbMsiNLLdNLK]Ml^NLL`NLK]Mo]MPfM_\\Mt\\NLKpMsoMTmM\\_MPmM_\\MpQM_pMumNLLKMQeMmmNLLPMQeMOnMtlMgcM_pMtfMtlMPkNLKcMNqMtlMTmMPjMscMQOMuoMunMRQMOfNLMOM_aMPNNLM\\MspM_\\Mc]MsnNLK]M\\_MP_M_\\MmdMskNLLaMcjM\\KMP`NLL]NLKTNLKqMQeMP^M_\\MRbMcjMskMuhMTmNLNSNLLfNLMuMbfNLNMMRTNLNOMunNLNQMQeMPeNLLQMPKNLN\\Mi]NLKsMRTNLNaNLKpNLNdNLNoMuoMsoMRbNLNKNLNjMRQNLNTNLNnMPcNLO]NLN]MPbNLN`NLN\\NLNcMRPMTmNLO_NLNgMuoNLNeMshMOqMuoMRbNLLaMOsNLN\\MRPNLMMMRPNLNnMQMNLOcMcjM_pNLOQMtlNLNSNLPPMRbMQLNLOTMtlNLNPMQeNLNRNLO`MQKMQeMQRNLO`MQQMQeMQPNLO`NLMhMPqNLLQNLNmMQeMPpMQeMPoMRPNLKmMSbMsgMRTMuSMRSNLLaMRlM\\KNLLMNLQONLN]Md\\NLQSMPsMQeMPrM_qNLMlM\\KMsgNLKrMQeMRlM_`MaaMltMSbMRlM_pNLQeMcjMPnNLKoMQeMjfNLOLNLM^NLK]MtONLK]MRbMtSNLOuNLKpM_aNLOLMtrNLMOMRbNLMtNLN\\MgcMOlMtlNLN\\MNrNLMqM_pMQiNLPLMRPNLRdNLPONLMcMcjMgcMOkNLOlNLN\\McjMOjMRPMNoNLOdNLLqNLOmMSbMcjNLOmMQsMMrNLP`MQeMOpMajMSbM\\KMstMRPMRlM^eMtLM\\KMOoNLKjMRPM]LNLMTMRPMtLMTQMOeNLSgMQeMlMMOdMajMRlMlMMsbNLP\\MpKMRTMkcMu`MajMhLM_aMlMMlMNLSkMRPMi]NLRLNLN]Mi]NLROMuKMOcMajMi]MSmMskMtLMltNLT`MltMltNLTcM`QMObM_\\MMuMQeMltM`QMskMQgM]gNLThNLReMRPMnkNLSaMRTNL\\MNLKNMtMNLMqM^pNL\\RMQeNLTPMQeNL\\aMpQNL\\dMRTMtnNL\\aMuNNL\\gNLT]NLOfM]gNLKuMRSNLRfNL\\QMRTNLT\\NL\\sNLT^M_\\NL\\aNLTRNL\\eNLMbMQeNLKbNLRnNLRpNLKbNLKbMOiMthM]gNLKiM\\_M_pMstNL]NNL]MMRTNLKuMRTNLPpNLKbNLKiNLPOMRPNLKbMTmNLNpMsoNL]]NLNTMRPNLKiNLOsNLNTNLKiM\\KMOhM_\\NL]lNLMqNL]sMtlNL]rNL]oNL]RMQeMOgM_\\NL^LNLKQNLLaNL^OMQeNLMlNLMNNLKiNLPcMPRNLPmMQeNLKiMPQMQeNLLPNL\\\\NLKmMtiNLRQNL\\aNLTMNL\\aNLKONLKqNLSfNLKiM_`NLKmMRTNL^SNL]nNL^`NL]qMuONL]tNL^bMRTNL^dNLQNNL^KNLSSMPPNL^NMQeNLPcMPONL^nNL^pNL^rNL]`MQeNLKmMRbNL]dNL]KMupNL]gMRPNL]iNL_QNL^oMQeNL_TNL^RNL`RNL__NL]pNLOONL^\\NLKbMP]NL^cMt^NL_kM\\KMP\\NL_kNLPcMPTNL_rNLKmNLM]NLMqNL\\lNLMmNLKqM_`NL_SNL_sNL`\\NL]mNL_bMtlNLO_NL`aNL]uNL`RNL^MNL^fNLSSMPSNLaKNLMqMtLNLKbMOuNLKcMRPMqaNLOgMuOMqaMqaMOtNLO\\NL_\\MuPNLLQMRSNLKmM\\KNLOqNLLaNLKmNLPcMOrNLNTNLKmNLMoMPMM_\\MtgMRPMbpNLLaMtgMPLMQeNLabNLbTMQeNLNrNLMcNLb`MNpNLb^NLN]NL`uNL^qMtgNL\\\\MtgNLPNNL_LNL_]NL`NNL`qMQuNLRdNLKmM_`NLbQNLadNL`uNLQuMQeMqaNLRuMRPMsoNLKiNLafNLcSNL`RNLajMRTNLcKM\\_NLb`M\\KMtkNLb`NLPcMNuNLNTMtgNLMoMNtM_\\NLMRNL\\^NLMNNLLPNLb]NLRuNLcpNLbaMcRNL^nNLLPNLbeNLRuNLQeMtgNL^qNL^sM]gNLLPNLPuNLbnNLcLMRTNL]PNLT^MSmMtgM_`NLcnNL`RMtgNLcNNLaLNLcRNL_hNLcTMuKMQeMtgNLRdM_aNLKiMtgNLTiNLPsNL`oMuONLKmNL^uNLdnNLLPNLTeM_aNLKmNLLPNLTiMtgMtgMNiNLKcNLRaNLe^MQeMNhNLePMQeMNgMajNLdtNLKpMtLNLLPNLT`NLLPNLLPMNmNLbgMtgMNfNL_qNLelMQeNLe`NLdkNL_qNLLPNLeeMtLM]gMNlMajNLe\\NLOMNLKsNLLPNLetMtgMQsNLabM]gNLKbNLfNM]gM]gNLfQMRPNLL\\MqTNLdnMutMseNL\\mMjfNLfmMtLMkcNLfpM_\\M]gMkcNLOeNL_qNLKuNL\\NMRPNLfeNLacMQeNLfhNLedNLMgMQeNLflNLKjMTQMutNLMcNLfqMQeNLbONL\\mMkcMO\\MajNLgMNLOMMRPNLLPMnaM]gNLLaNLLPMOTNLghNLNTNLLPNLPgNLPiNLfRNLfLNLg\\NLg^NLfjNLgaMQeMmTMRTNLRuM]gMskNLTiMptNLL\\MO`NLg\\NLL\\NLL\\NLh\\MutNLfsMRPMjfMO_MajNLL\\MjfNLgOM]gM_TNLL\\MuhM]gNLetNLdfNLL\\M_\\MsoMutNLLPMO^MuOMutMutNL]_NL\\\\MkcNLQlNLKQNL`pNL^dNL`pNLdfNL\\aNLiQNL`LMbaNLMSMQeMutMkcNLTKNLioMajMNsNLQrMuONL_rMl^NLQcNL\\^NL`pMkcNLd`MRTNLiiNLg\\MshNLMcMo]NLLPMnkMdeMQeMo]Mo]NLiaM]gNLLuM]LNL\\rNL`pMutNLjSMRPNLjRNL`LMsoNL`LNLdfNLMTMo]NLLuNLRkNLjdNL_qMOMNLRpNLjeMQeNLjgMQeNLLuMTQM_pMsbNL\\aMjfMScNLkNNLkLNLj^NLkNNLKmNLkPNLjcNLkRNLkTNLLuNLSuNLjPNLkaNLbpNLjmNL`LMl^MRTNLPlNLkKNL^TMRPMo]M\\_MOLNLdnNLLuNLgiM_\\NLlLNLcNMo]NLT`NLkRNLTcNLLuNLS`MRTNLlLNLRTNLkRNLR^NLkRMRONLkjNLkNNLklNLN]NLk_NL`LNL\\uNLinNLl]M`kMsfMRTMsRMuNMjRM\\SMTrMTtMc]MOgMNjMgfMNsMcqMbaM\\aM\\cMR`MnhM\\hMOuMpkM]dM\\QM_nMQcNLRhMQeMd^Md`MobMdeMSSMdgMdiMNjMdkMdmMdoM\\NMdrMdtMdqMeLMo`MeOMaLMeRMeTMeeM^eM]bMbNMbaMccMcLMpQMOqMdcM\\PMqSMbeMQmMOmMmdMQsMnhNLT`M_\\NLldNLS`NL_gNLKpMbpNLnuMskM\\_MTmNLLaMskMRbMulNLO\\McjNL\\kNLO\\NLQKNL^MMbeMpKMhaMRPM_SMNnMaOMO]MNoMNjMSpMTkNLkrMNiMbLMkaMeqMaqMblM\\tMNuMPcMj]MPbMOoMO_MOhM`\\MOaMOMMOcMOTMO\\NLmOMTpNLmQMjRNLmTNLm]NLm_M\\`M\\bMj_MimMNjMO]MNhMfnMeeNLpiM_nMpjMo]MSQNLmrNLouMjmMNkMgPMdqMgSNLplMkkNLmuNLogMeRNLojNLolMgiMSQNLnhMgfM]dMopM_eNLn`M]cM]eNL\\uNLqSNLoiNLokMbnMPdMa]MiqMNfMpKMQsNL\\uMsgMtLNL`KMbeMskNLcNNLbRNLj]MRTMucNLntNLNTNLoNNLP^NLO\\NLoSNLrTNLN\\MSbNLoQNLQfNLSSM_aNLrMMajNLo`NL\\TNLNkMnhMOdMOSMOlNLq^MQeM`aM]nMcuMgaM^eMS_M^oMRTMNmMoTMktMRTMeRMksMRjM^eMkTMTqNLcKNLjcMsgNLM^NLMhMbpNLldNLTsM_pNLseMthNLfTM_pNL_KNLRfNLmlNL_KNLRgMRTMqaNLkMMsgMsnNLd]NLjkNL^MNLhcNLdnNLr\\M_aMnhNLrfNLKpMtuNL]hNL^TNLOmNL_uNLRbNLRPMc]MQeNLTsNLRSMthMnaMRbNLKuMsqNLmlNLtkMRPNLP\\NLtaMRTMORMuoNLS`MQgNLKiMskNLjjNLt\\NLmlNLuNMQeNLP\\NLriNLtsNLrKNLluNLoaM_aMQdMtLM_qMc]NLsSMNhMcLMbaMO]MRpMNmMhtMhLMrsMhOMguMhRMhTNLmgMioMsNMcQMb^MbSM\\eNLsRM_jMgeMQcNLalMSdMOaMTTNLpjMgeMOMMrsMnSMfnM^lMNrMbQMhtMc]MOeM\\OMnuMdOMmdMO^M\\tMNfM_kMTOMhLNMKTMnpMblM_mMebM`rMg\\MjTMT_M_tMhiMgjMNkNMLPMa]M`hNLodMjSMqiM_kM\\NMqmNLkPMpuNLrpMSoMguMg_MhtM^eMOpMNkM]QMdPM`lM]dNLOmNLSkNLdhNLeLMpRNLRQNLOcNL`KNLoLNLmlNLbmNLM_MtqNL\\TM]gMbiNLlpNL`pNLimNL_jNMM\\MsbNLRoMucMthNLaLNL\\qNLuONLrQNL`oNLrgM_aNLRsNLo`MQgMnaM`uNLeLNLsqNMMtMsbNLSrNMM`NLkfNLlpMsnNLOmNLlpMtpM]gMtNNLMqMstNMLfNMMNMQeNMNaNLtSNLLnNLshNLa_NL^MMbaMsoNLlpNLtdNLldM_\\MtQNLg\\NMNpMRbMtTNL`qNL`eMt`MuONMNpNMN\\NLamNLrgMsbNMNdNL`\\Mt_NLrhNLmKNLquNLeLMtLMskMmdMssNLKpNL\\kMskNLtSNLu_NLoLM_\\NLQ^NMNMMtlNMMgMuoNLimNLRuNMM\\NL\\LMnaMTmNMOlNLrQNLmlNMPLMPiNLMcNLLsNLrdNLjcMTmMTmNMOOMgcNMN^NMN`NLNkM_\\NMOSNLleNLMpNLduNMOpNLg\\MRbNLRNNLMKMpuMcjNLtdNLK]NLbmNLLaM\\_M\\KM]LNMPrNL`MMlMMtLMRbMsRNLPSNLN]NMQQMSmMuhM\\_Mi]NLRNNLaLMunNL`KNMNKMQeNMQaMtoNLmlNMMpNLo_MajNMQhM_aNL_dNMMuNLmKMRQMuNMdfM]dMipMT`MucNLSrMajNLjcM_\\MsbNL_jNMQiNL^aNMQoMsjNLNkMpKMh^M\\bMheMhgM]^NLrpMhlMehMNkMhoNLtdMOQMbeNMNkNMO^NLrONMNnNLMqNLsiNLmKNLriNLu_NMROMnhMjRNMKiMRqMaiMpuMnlMOmMt]NMRLM_aNMPPNLu`MQeMPkNLMaNLOfNMN_NMQfNLrjNMOmMajNLMNNL^MMfkNMQmNMRsNMMNMTPMf]MOSNMKuMSkMTqMg`M_PNMSLNMKjM\\rMuNNLsaNMQoNLSrNMOhNLteNMRpNLKpNMMrNLMqNLbmMtsNMMRNL`oNMNNNMMLNLSrNMMnNLkfNLtONLNcNLKsNL`KMstNMSkMbeM`hNMSKNMQqNLptNLutMirMuNMrqMrkMrmM_iNLusNMQtMOaNL_PNMMMNMMqMnaM_pNL`nNMT`MudNMTbNMMLNLRpNLlpNMRPNMScMsbNLiuNMNOMfuNM\\bNMT]NLT]NLtlNLSgNMOmNMNONMS]NLlpMtaNMNSNMTTNL\\\\NLnpNLRQNMNaNLldNMPdMRPNLsgNL\\^MstNMQkM_\\NMTmNLu_NLubMg\\MObMNtNMK`MT]MR`NMLmNMLoMNlMcQMmiMSuMR`MmdNLunMnLMhKMRTMOoNLp`NM]tMRiMOaNMRbNMLSMhkMhmNMRgM]pMdPMoPMO]NML_MuhMQeNMReMhnM]pMPPMNjNLm\\NLrtNLrpNMKTMn_MecMlsM`RNM^QMhoNM^jM\\QMP]MOMMatNLrpMOoM\\NMnqMgkNLrpM^gNLsOMNnMcpMg\\M^gMT`M\\tMQKMneMRPMp_MQcMsgNLabMoLM_eMsgMOsNLO_Mf]NMNbNLthNLKpNL]cNMPMMRTNM_oNMT]NLslNMMuNLsoNL`oNM]_NMTgNMO^MtgNMRqNLkfNMNpNLkMNMNpMtRNLQ`MskNMTjNL\\^NMQcNM``NMMMNMTfNMS]NLtOMtpNLfTMskNLTkNLMqNMQcNM`kNMRSNLu_NLjcNLsiMtKNLMhNLoONLTrNL\\^NMOLMQgNLfTMbpNLaLNLsnNL_eNM`LNMRTNLMNMbpNLr_NLjcMRSNLr\\MQsNLMhMTmMtnNLTsMtpNMT\\MnaMRSNM`cNMSdMRPNM``NLjcM\\_MbpMigNLLRNMOLNMPgNMM\\NLfNNMP\\NMPSNMSbMTmM\\KM\\fM\\_MmmNM_tNMQcNMb\\NMamMQeNMaoNLMcM\\_MRSM]LMQsNLi]MTmMhLNLLrMtlMlMNLPPNMQ]NLdnMgcNMQPNLRPMtKNLMrNLSKMuhNMbeNLRbNM`MNLnrMQdMbaMdPMb^MOSM`OM^eMnPM\\bMbeL]MndNMR^MhcNMRaMNiMhhNMRdNM^nM]pMhLMQsNLjONLT`NM\\sNLtPNLjPNMRONLKpNL__MsqNLdnNMO\\NMS^NM`QNM_lM\\fNLuMNM_uMRTNLuQNMTeNMMLNLP\\NMN^MRTNL_jNLtOMsbNMcOMsfNLocMc]NLmPMTsNLpbNLm\\MNhNLm^McQNLmaNLphMScMjbNM]fNLusNLmiMgaNLkrMOtMjlM_lMjmMjoMipNLmtMe]NLukMjtM]lMkKMeeNLnfMSSMbRMbTNLrpNLngM_hNLqaNLfmM_\\MQuNLqdMf]NLqfMjRMOSNMcgM`_MTkMuNNMeqNLplM]^MPdMNjM_QNLkrNLtbNMTnNM\\bNM_lNLmKNLrgNMO_NMcoNMScNL`eMtsNLNTNMONNMfRNLidNMaRNL\\SNMfhNLSpNLa_NLMhNMahNLOfNMajNMfkNM\\nMRPNLknNMQcNLT_NLg`MRSMbiNLQeNMO\\NLQNMunMtdNLN\\NMaNNLboNMNTNLmlNLKbNMfjNMMKNMacNLKQMuSNMT]MRSNMMKNM\\_MRPNMMKNMQcNLemNMgLNLreNLKqNLKsNMarNLieNLMTNMNgNMddNMRTNMRONMdgMTnNLp`NMdjNLmSNMdlNMdnNLm`NLpgMkQMf]MTcMk\\M\\QMPiNM^\\M`sMckNLppNLmjMpQNMLnNMedNLpmNMefNMecNMKMNM^OMbjNLq`NLnjNLTfNMemM]aNMeoNMc^NLp`NLrpMO^NLp`NMfNM_QM]gNLsrNMSPNL\\PNLtTNMfSNMf^NL^MNMf`NLu]NMcrNLnuNMfeNLtdNLk^NM_pMRPNMiiNMgcNMfnNM_mMRSNMiiNMgiNL`MNMfjNLknNMimMuoNLT^NMgqNLamNMgQNL\\^MufNM_mNL_hNMfrNL`]NMgnNMgeNMfpNLdjNMb`NMMiNLmlNLKmNLscNLKQMpKNMgONLKoM]`NMgtNL\\^NMhKNMRtMsfNLNSMRQNM]oMnKMofNMSnMgpNMjtNLupMhSMmkM^eNMR_MgaMhLNM]tMTqNM^KMo`NM^NMi\\NM^mNMRfMhoNM^dNM^fMSpMoKNLrLNLudMqkNLufMRjNMKmNMKoNMKqNMh^MRPNMKtMdRNMSrNMLMMeTNM_`MpRNLrnNLrpNLrrM`\\NMkgNLrpMOlMqmM\\sM\\NNMetNMLTMfgNLukM`TMdPMfaMR`MsgNLc_M_aNMelNM_cMRTNM_eNMS\\NM_gMRTMOsNLrpMqPMqRNLqbMajMnmMjRMOjNM_KMSNMrgNLkSNM^eMNfNM_\\MbMNLhKMajMRNMq_MuSMPPMNhMNrNLooNMm]M\\tMqKNM_TMsNNM_^NMlMMp_MbeMQiMm^NMhOMTqNMhQMSLNMhSNLpeMRPNMdpMR`NL_PMP]MsMMlPMOTMmOMT_MSkM]mMNsMntNMduMpjNMiTMjSNMnSMlQMfnNMeTMbMMO]MolMReMOaMTdMOTMNlNMeaMnoNMhrMbNNLqeMbNMbiMehMO]MPdNLpkNLqgMlNMNtNMnTMeNMOoMh_NMeeNLikMfgMntMdhNMRgMeNNLs^NLqQNMnlMStNMnoM\\tMNlMPcNML`MRqMgeNLqmNLufNLogMNtNLhgNM_kNMRMNLgfNLmKNMg\\NLK`NL\\PNMQcNM\\^NMSTNLiRNMpONLO\\NMRNNMfbNLcQNLKpNM\\tNMQnMQsNLNSNMdMNMcsNMdONLtONL\\mMtRNLSoNMgMNLSoM\\_MpQMsoMuQNLOrMuLNMPoNLieNMOnM_\\NLSnNLPONLOmNLRmNLKoNMgcMRlMuSNMTSMcjMRlNMOtNLN\\NMqQNMijNM^`NL^TNLRlNLMONMbRNLfTMcjNLL\\NMg^MRTNMqnNMb`NMqeNMS]NMqTM]LNMT]McjNMqeNMirNMqsNMqiMgcMTQNMqtNLN\\MlMMPkNLb]McjNLkeMi]NMQcNLkeMQeNLeqMtnNLtoNLN\\MtONLMcMSbNMrRNLkfMSbMSbMltMQ_NLNLMSmNLNLM_pMSbNMQcNMruNMb`NLObNLkMNMrlNL`MNMS]NMroNL\\]MQ_NLhgMSmNMsPNMjjNLmlNMsaNMQcNLLRMsbNLeqNLo^NLuRNLKoNMrjNLrdMgcNLKuNMS]NMq^NMfkMQ_NLTeNLKbNLPiM_pNLSbNLmlNMtKNMb`NLMhNMsgNLrdM_aNLP\\NLidNLOfNMqlMQeNLQpNMqoMRPNMtaNMqrNLMqNMT]MSbNMrNNMteNLslNLfTNLQgNMpSNLmlM_`NMfjNMrPNLSSNMsnNLkfM\\KM\\KMlMMQgNLbeMbpNLS\\M_pM\\KNMQcNMuQNMtjNMtuNLMONMsoNLMcMbpNMuLNLnrNL`qNLuKNLKQM`QNMQbNLmlNMuhNM_mM_pNLeqNMj\\NMunNLsjNLKpNLMlNMtbNL^hNM`lNLmlNMupNMS]NMaaNLcOMshNLPcMtuNLKiMtbNLKQNLKmNMptNLKpMqaNNK_M\\_MtgNNKbNL_qNMMlMRSNMbtNLamNMneNNKeNLL\\MtLNMbNNL\\mMRbNLkrNLKMNMqMNMprNMNbMtuNNKiM\\_MqaNLfNNMpuNLL\\NMbkMskNL`PNLMdNMqNNMOPNLgoNLMqMqaNNLMNLjKNNLPNLamNLjpNMjLNL^eNLK]MsiMl^NLLeNLkNNLLnNNLmNLLuMi]NNLmMmmNMSaMuLNLtaMucM_TNLM^MtgMRSNLkbMshNL`kMtuNNLgMc]NLnuMTmMsiNLMfNLLaMTmMo]MunNNMcNLk\\NLN]NNMgMmmNMjqNMfcNL_KNM`oNMfTNL]LNMjrM\\LNMkMMRuNLumNNMtMOTNLuqNMkPMhbMh`NLffMQeNMk\\MNuNMk^NM^MNMcgM]^M_PMrdMenNMciNMkcNM^SMmdMmfMmhMn]NLp_NMmtNLmRNMnKNLpdNMdoNMh]MgoMQeMmiMpdMdhMmPNMncNLmjMsRNNNhNNNtNMniM_SNMeTNMefNMnuNMejMudNMhuMpRNMeoMnhMOLMdMNMneNM\\jMbeNMTcNMslNM\\dNMuqM_pNLbmNMfjNMT_NNOiNL]QNMcpNMTONMNgMQeNLRuNMTkNLRpNLrgMRSNMjKNLimNLTsMskNNKONMT]MskNMgmNMirNMgmNLQeNL\\LNLKjMRONMa^NMNqNMjQNLLoNMMlNMQKNLo]NLdnNMbQMajMt]NMbuMTmMRbNMQ\\NLrdNLoPMuLM]LMTQNMQKMlMNM^_NMaLNMaTNMjoNLOsNM^_NNNrNM]pNMjuNNNKMsTMhQNMkOMhpNMkRMQcNNNRNNNTNNN]NM^NNNNaMiKMRjMpQNM^aNM^RMsKMkdMoQMoSMonNLsQMh]NMhPNNNmM`kNMnLNNNpNLmbNLrpNM^\\MPiNNOLNLpoNMeKNM^lMRPNM^\\NNQuMlhNNOSMdjNNO\\NMehNMhsM_aMQ]NNO`NLnaM]eMpQMSpMT\\MO^MPdMe`NMfQNLRsNNOhNMi^NMNPNL\\PNM_sMtlNMj\\NLspNLmlNLd]NM\\SNLeLNM\\rNMScNNOtNLjPNNPLNMpdNNPNNM`lNMgnNNPRNLt\\NMT\\NM`iNLloNNKKMRTNMgKNMQcNMqqNNPbNLtbMQsNNPeNNLhMtPNNPhNM_qNNPjMuLNNPlNNKnNMgoNLOKMpuNMbNNNPsMuLMRlNNQKNLamNNQMNLNTM\\_NNQPNMNoNLamNMjnNNMpMQdNL_PNMmNM\\NNM^kMmdMP]MpMMNkMkSMTeMp^M`mMQeMNPMNQNN\\PNN\\PMM\\MndNM]hNMLpMuSMOpM]lMmRMn_MaNNM]gMRTMPQMO`MrNMQcNL\\uNN\\_MqQMnSMSRM\\NMcgMbNMnhMOfM\\qNMleM^mNLsMM^qM^sNLP\\NMi]M_aMoMMfcNNO`Mc_NNQ^MclMS\\MSeNNNOMh]MhcMcQMrdMlkNN\\dMRPMasM_mNMLtMctNMRkNMO]NMPbNLqtNMRnNNPgNMNpMtLNLt]NLdnNMpuNNLeNM`uNNKeNMNsNMSbNMNjNMbPNLMONMbkNMaeNNThNMbLNMfcNL^MNMNtMuSNNKeMbpNNTSNLqqNLK]NLTPNLKMNN^gNLN\\NL\\cNNTQNNL`MRSMSbNLimNMfcNLldNLo`NMRlNM\\iNMd`NLdnNNKONLfNMtuNN^eMuLNLScNN^QNLg\\NMbNNNM`NN^SNN^PNMPhNLfNNMPjNN^TNLRMNMqKNLKQMRbNLldMbaNLcNMTmNN^cNN^SNN_RMuoNN^kNMrmNL\\mNLNnNL\\mMSbNLTRNMSbMSbNLgOM\\_MSbNLtdM_pNMOLNMOdNMfsNMudNLrgNN`]NMQRNLO\\NM`jNN`_NLlMNMctNMfkNMPbNMTfNNSeNMSbNLKpNLPpNMutNN`nNMb`Md\\NMOmNMOgNLKcNLOmNLtOMtLNMdbNN`gNMQcNMtpM]aNLoKNN`uNNSeNLKONNaNNMMnNMd]NLldNLajNMplMgpNN`kNLu^NNMpNNLhNMlsMlkNMluM]eMbaMrRM^tNMmnM`mNMllMRPNLmfMbaMpbNMoqMjRM_PM_RMSeNNarMQeMOtNLs`NMgKNMRtNMRoNMibNMNbNMTfMtLNM`QNNTMNMNpNMMlNLS`NNK\\MtuNNbhNLamNNTONNbgMuLNMbdMuONMpuNN__NNSRNNL^NNbqNMbuNNbmNNL]NLOiNMbNNLimNN_iNMPiNLOnMuONN_dNNbrNL`nMt]NN_dNL\\fNNPfNLgONLrgNMTRNMRsMQdMbiMisMQeMi_MRhNM\\KNM^rNM^tNN\\\\NM]jMpKMOhMr`MaeM\\qMfrMQMNMdoMdbMa]NNaiMqQNMeiMpkMgrNMKbMfoNMhfNM\\PNNKkNLhpNLsbNMcqNNcLNMdcMuONLtONMpnNLMqNLtaNNPTNLmlNNMLNLuPNMqhNLeLNNMONNaeNM`fNN`gNNdtNNPTMthNLQ`M_pNMgmNNdlNLjTNL`oNLuSNMMLMmTNN^uNLu_NLimNM\\iNMSiNLg\\NLlpNNe`NMMNNMRlNMSbNN_KNLOjNMN]NMf]NL`LM_aNMNaM_aNMjlNMd`NM`MNLsuNLNkMhLNNckMOTNM\\KNM^pNN]gNLSTNM]iNMlMNMLnMNuNL\\kNMRsNLjrNMRmNMfaMuONNOkNNeiNNdiNLRPNMutNMT_NN]ONMQjNMhLNMdeMsfM^eNNciNNfLNNcmNM^sNNfPNMLnNMLpNLTPNNcsMccNNcsMmLM`qMgaNLm`NNdOMNiNL\\uMPiNNdbNNf`NNacNMOdNN``NN`cNL\\^M\\fM_pNNdkNMb`NNdnNMdTNNdpNNdcNLM_NNg`NLMcNNdfNNeKNLKQMQgNNeNNMisNMMkNMikNL`oNNSLMajNNflNMMLNLTMNMTcNLMrMbaNMMjNMfjNMMjNMQcNMt]NNOqNMt^NLMqNL`nNMfjNL`nNNh`NM\\aNMidNLO\\M_aNL_jNL`KNNTjNNcfMsgNMmRNMQrNMTsMOaNL\\kNMp]NL\\TNLfTNMfcNMutNNh_NMTaNMSfNMS\\NN]kNLoaNMRQNN`gNLdKMbeNNhNNMQlNMhLM_a");local M,e,N,L=1,f and f.bxor or function(M,N)local L,e=1,0 while M>0 and N>0 do local n,l=M%2,N%2 if n~=l then e=e+L end M,N,L=(M-n)/2,(N-l)/2,L*2 end if M<N then M=N end while M>0 do local N=M%2 if N>0 then e=e+L end M,L=(M-N)/2,L*2 end return e end,235,function(N,M,L)if L then local M=(N/2^(M-1))%2^((L-1)-(M-1)+1);return M-M%1;else local M=2^(M-1);return(N%(M+M)>=M)and 1 or 0;end;end local N,c,t=function()local L,t,n,l=o(d,M,M+3);L,t,n,l=e(L,N),e(t,N),e(n,N),e(l,N)M=M+4;return(l*16777216)+(n*65536)+(t*256)+L;end,function()local N=e(o(d,M,M),N);M=M+1;return N;end,function()local l,L=o(d,M,M+2);l,L=e(l,N),e(L,N)M=M+2;return(L*256)+l;end;local function f()local M=N();local N=N();local l=1;local e=(L(N,1,20)*(2^32))+M;local M=L(N,21,31);local N=((-1)^L(N,32));if(M==0)then if(e==0)then return N*0;else M=1;l=0;end;elseif(M==2047)then return(e==0)and(N*(1/0))or(N*(0/0));end;return O(N,M-1023)*(l+(e/(2^52)));end;local M,l=N,function(L)local n;if(not L)then L=N();if(L==0)then return'';end;end;n=l(d,M,M+L-1);M=M+L;local N={}for M=1,#n do N[M]=a(e(o(l(n,M,M)),235))end return s(N);end;local M,O=N,function(...)return{...},i('#',...)end local function h()local a,o,M={},{},{};local d={a,o,nil,M};local M,e=N(),{}for L=1,M do local N,M=c();if(N==1)then M=(c()~=0);elseif(N==0)then M=f();elseif(N==2)then M=l();end;e[L]=M;end;for o=1,N()do local M=c();if(L(M,1,1)==0)then local l,n,M=L(M,2,3),L(M,4,6),{t(),t(),nil,nil};if(l==0)then M[3]=t();M[4]=t();elseif(l==1)then M[3]=N();elseif(l==2)then M[3]=N()-(2^16)elseif(l==3)then M[3]=N()-(2^16)M[4]=t();end;if(L(n,1,1)==1)then M[2]=e[M[2]]end if(L(n,2,2)==1)then M[3]=e[M[3]]end if(L(n,3,3)==1)then M[4]=e[M[4]]end a[o]=M;end end;for M=1,N()do o[M-1]=h();end;d[3]=c();return d;end;local function f(M,o,t)local M,N,L=M[1],M[2],M[3];return function(...)local e,i,l,a,N,c,h,s,O,d,L=M,N,L,O,1,-1,{},{...},i('#',...)-1,{},{};for M=0,O do if(M>=l)then h[M-l]=s[M+1];else L[M]=s[M+1];end;end;local M=O-l+1 local M;local l;while true do M=e[N];l=M[1];if l<=67 then if l<=33 then if l<=16 then if l<=7 then if l<=3 then if l<=1 then if l>0 then L[M[2]]=o[M[3]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=t[M[3]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];if(L[M[2]]==L[M[4]])then N=N+1;else N=M[3];end;else L[M[2]]=L[M[3]];end;elseif l==2 then L[M[2]]={};else local o;local l;L[M[2]]=t[M[3]];N=N+1;M=e[N];l=M[2];o=L[M[3]];L[l+1]=o;L[l]=o[M[4]];N=N+1;M=e[N];L[M[2]]={};N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];l=M[2]L[l](n(L,l+1,M[3]))N=N+1;M=e[N];do return end;end;elseif l<=5 then if l>4 then if(L[M[2]]~=L[M[4]])then N=N+1;else N=M[3];end;else L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]]={};N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]][M[3]]=L[M[4]];end;elseif l==6 then local n;local l;o[M[3]]=L[M[2]];N=N+1;M=e[N];L[M[2]]=o[M[3]];N=N+1;M=e[N];L[M[2]]=L[M[3]];N=N+1;M=e[N];l=M[2]L[l](L[l+1])N=N+1;M=e[N];L[M[2]]=t[M[3]];N=N+1;M=e[N];l=M[2];n=L[M[3]];L[l+1]=n;L[l]=n[M[4]];N=N+1;M=e[N];L[M[2]]={};N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];if not L[M[2]]then N=N+1;else N=M[3];end;else local N=M[2]local l,e={L[N](L[N+1])},0;for M=N,M[4]do e=e+1;L[M]=l[e];end end;elseif l<=11 then if l<=9 then if l>8 then L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=t[M[3]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];if(L[M[2]]==L[M[4]])then N=N+1;else N=M[3];end;else if(L[M[2]]<L[M[4]])then N=M[3];else N=N+1;end;end;elseif l==10 then local d,n;local c;local l;l=M[2];c=L[M[3]];L[l+1]=c;L[l]=c[M[4]];N=N+1;M=e[N];l=M[2]L[l]=L[l](L[l+1])N=N+1;M=e[N];L[M[2]]=t[M[3]];N=N+1;M=e[N];L[M[2]]=o[M[3]];N=N+1;M=e[N];l=M[2]d,n={L[l](L[l+1])},0;for M=l,M[4]do n=n+1;L[M]=d[n];end N=N+1;M=e[N];N=M[3];else N=M[3];end;elseif l<=13 then if l==12 then local c;local l;L[M[2]]=t[M[3]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];l=M[2]L[l](L[l+1])N=N+1;M=e[N];l=M[2];c=L[M[3]];L[l+1]=c;L[l]=c[M[4]];N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];l=M[2]L[l]=L[l](n(L,l+1,M[3]))N=N+1;M=e[N];L[M[2]]=o[M[3]];N=N+1;M=e[N];if L[M[2]]then N=N+1;else N=M[3];end;else L[M[2]]=(M[3]~=0);end;elseif l<=14 then local l;L[M[2]]=M[3];N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];l=M[2]L[l]=L[l](n(L,l+1,M[3]))N=N+1;M=e[N];L[M[2]][M[3]]=L[M[4]];N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]]=t[M[3]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=M[3];elseif l>15 then local l;L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=o[M[3]];N=N+1;M=e[N];L[M[2]]=L[M[3]]-L[M[4]];N=N+1;M=e[N];L[M[2]]=o[M[3]];N=N+1;M=e[N];L[M[2]]=t[M[3]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=o[M[3]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=o[M[3]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=L[M[3]]+L[M[4]];N=N+1;M=e[N];L[M[2]]=o[M[3]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=o[M[3]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=L[M[3]]+L[M[4]];N=N+1;M=e[N];l=M[2]L[l]=L[l](n(L,l+1,M[3]))N=N+1;M=e[N];L[M[2]][M[3]]=L[M[4]];N=N+1;M=e[N];do return end;else local o;local l;L[M[2]]=t[M[3]];N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];l=M[2]L[l](L[l+1])N=N+1;M=e[N];L[M[2]]=t[M[3]];N=N+1;M=e[N];l=M[2];o=L[M[3]];L[l+1]=o;L[l]=o[M[4]];N=N+1;M=e[N];L[M[2]]={};N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];l=M[2]L[l](n(L,l+1,M[3]))N=N+1;M=e[N];do return end;end;elseif l<=24 then if l<=20 then if l<=18 then if l==17 then local N=M[2];local e=L[N];for M=N+1,M[3]do R(e,L[M])end;else local o;local l;L[M[2]][M[3]]=L[M[4]];N=N+1;M=e[N];l=M[2]L[l](n(L,l+1,M[3]))N=N+1;M=e[N];L[M[2]]=t[M[3]];N=N+1;M=e[N];l=M[2];o=L[M[3]];L[l+1]=o;L[l]=o[M[4]];N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];l=M[2]L[l]=L[l](n(L,l+1,M[3]))N=N+1;M=e[N];L[M[2]]=t[M[3]];N=N+1;M=e[N];l=M[2];o=L[M[3]];L[l+1]=o;L[l]=o[M[4]];N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];l=M[2]L[l]=L[l](n(L,l+1,M[3]))end;elseif l==19 then L[M[2]]=L[M[3]][M[4]];else if not L[M[2]]then N=N+1;else N=M[3];end;end;elseif l<=22 then if l==21 then local l,l;local i;local o;local d,f;local l;l=M[2]d,f=a(L[l](n(L,l+1,M[3])))c=f+l-1 o=0;for M=l,c do o=o+1;L[M]=d[o];end;N=N+1;M=e[N];l=M[2]L[l](n(L,l+1,c))N=N+1;M=e[N];L[M[2]]=t[M[3]];N=N+1;M=e[N];L[M[2]]=t[M[3]];N=N+1;M=e[N];l=M[2];i=L[M[3]];L[l+1]=i;L[l]=i[M[4]];N=N+1;M=e[N];l=M[2]d,f=a(L[l](L[l+1]))c=f+l-1 o=0;for M=l,c do o=o+1;L[M]=d[o];end;N=N+1;M=e[N];l=M[2]d,o={L[l](n(L,l+1,c))},0;for M=l,M[4]do o=o+1;L[M]=d[o];end N=N+1;M=e[N];N=M[3];else local n;local l;o[M[3]]=L[M[2]];N=N+1;M=e[N];L[M[2]]=o[M[3]];N=N+1;M=e[N];L[M[2]]=L[M[3]];N=N+1;M=e[N];l=M[2]L[l](L[l+1])N=N+1;M=e[N];L[M[2]]=t[M[3]];N=N+1;M=e[N];l=M[2];n=L[M[3]];L[l+1]=n;L[l]=n[M[4]];N=N+1;M=e[N];L[M[2]]={};N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];if L[M[2]]then N=N+1;else N=M[3];end;end;elseif l==23 then local l=M[2];local n=M[4];local e=l+2 local l={L[l](L[l+1],L[e])};for M=1,n do L[e+M]=l[M];end;local l=l[1]if l then L[e]=l N=M[3];else N=N+1;end;else L[M[2]]={};N=N+1;M=e[N];L[M[2]]={};N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]][M[3]]=M[4];end;elseif l<=28 then if l<=26 then if l>25 then local c;local o;local l;L[M[2]]=t[M[3]];N=N+1;M=e[N];l=M[2];o=L[M[3]];L[l+1]=o;L[l]=o[M[4]];N=N+1;M=e[N];L[M[2]]={};N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];L[M[2]]=L[M[3]];N=N+1;M=e[N];o=M[3];c=L[o]for M=o+1,M[4]do c=c..L[M];end;L[M[2]]=c;N=N+1;M=e[N];L[M[2]][M[3]]=L[M[4]];N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];l=M[2]L[l](n(L,l+1,M[3]))else L[M[2]]=t[M[3]];end;elseif l==27 then local c=i[M[3]];local n;local l={};n=Q({},{__index=function(N,M)local M=l[M];return M[1][M[2]];end,__newindex=function(L,M,N)local M=l[M]M[1][M[2]]=N;end;});for n=1,M[4]do N=N+1;local M=e[N];if M[1]==120 then l[n-1]={L,M[3]};else l[n-1]={o,M[3]};end;d[#d+1]=l;end;L[M[2]]=f(c,n,t);else local t;local l;L[M[2]][M[3]]=L[M[4]];N=N+1;M=e[N];l=M[2]L[l](n(L,l+1,M[3]))N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];l=M[2];t=L[M[3]];L[l+1]=t;L[l]=t[M[4]];N=N+1;M=e[N];L[M[2]]={};N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]][M[3]]=M[4];end;elseif l<=30 then if l>29 then local o;local l;l=M[2]L[l](n(L,l+1,M[3]))N=N+1;M=e[N];L[M[2]]=t[M[3]];N=N+1;M=e[N];l=M[2];o=L[M[3]];L[l+1]=o;L[l]=o[M[4]];N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];l=M[2]L[l]=L[l](n(L,l+1,M[3]))N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];if not L[M[2]]then N=N+1;else N=M[3];end;else local o;local l;local c;L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];L[M[2]]=L[M[3]];N=N+1;M=e[N];c=M[3];l=L[c]for M=c+1,M[4]do l=l..L[M];end;L[M[2]]=l;N=N+1;M=e[N];L[M[2]][M[3]]=L[M[4]];N=N+1;M=e[N];L[M[2]]=t[M[3]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];o=M[2]L[o]=L[o](n(L,o+1,M[3]))end;elseif l<=31 then local o;local l;L[M[2]]={};N=N+1;M=e[N];L[M[2]]=(M[3]~=0);N=N+1;M=e[N];for M=M[2],M[3]do L[M]=nil;end;N=N+1;M=e[N];L[M[2]]=t[M[3]];N=N+1;M=e[N];l=M[2];o=L[M[3]];L[l+1]=o;L[l]=o[M[4]];N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];l=M[2]L[l]=L[l](n(L,l+1,M[3]))N=N+1;M=e[N];L[M[2]]=t[M[3]];N=N+1;M=e[N];l=M[2];o=L[M[3]];L[l+1]=o;L[l]=o[M[4]];N=N+1;M=e[N];L[M[2]]=M[3];elseif l==32 then L[M[2]]={};else local n=M[2];local l={};for M=1,#d do local M=d[M];for N=0,#M do local M=M[N];local e=M[1];local N=M[2];if e==L and N>=n then l[N]=e[N];M[1]=l;end;end;end;end;elseif l<=50 then if l<=41 then if l<=37 then if l<=35 then if l>34 then local c;local l;l=M[2]L[l](n(L,l+1,M[3]))N=N+1;M=e[N];L[M[2]]=t[M[3]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=o[M[3]];N=N+1;M=e[N];L[M[2]]=o[M[3]];N=N+1;M=e[N];l=M[2];c=L[M[3]];L[l+1]=c;L[l]=c[M[4]];N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];l=M[2]L[l]=L[l](n(L,l+1,M[3]))N=N+1;M=e[N];l=M[2];c=L[M[3]];L[l+1]=c;L[l]=c[M[4]];else local l;l=M[2]L[l]=L[l](n(L,l+1,M[3]))N=N+1;M=e[N];L[M[2]]=t[M[3]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=o[M[3]];N=N+1;M=e[N];L[M[2]]=L[M[3]];N=N+1;M=e[N];l=M[2]L[l](n(L,l+1,M[3]))N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]]=t[M[3]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]][M[3]]=L[M[4]];end;elseif l>36 then if(M[2]<=L[M[4]])then N=M[3];else N=N+1;end;else L[M[2]][M[3]]=M[4];end;elseif l<=39 then if l>38 then local M=M[2]L[M](n(L,M+1,c))else if(L[M[2]]<=M[4])then N=N+1;else N=M[3];end;end;elseif l>40 then local l,l;local o;local d,i;local f;local l;L[M[2]]=M[3];N=N+1;M=e[N];l=M[2]L[l]=L[l](n(L,l+1,M[3]))N=N+1;M=e[N];for M=M[2],M[3]do L[M]=nil;end;N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];L[M[2]]=t[M[3]];N=N+1;M=e[N];L[M[2]]=t[M[3]];N=N+1;M=e[N];l=M[2];f=L[M[3]];L[l+1]=f;L[l]=f[M[4]];N=N+1;M=e[N];l=M[2]d,i=a(L[l](L[l+1]))c=i+l-1 o=0;for M=l,c do o=o+1;L[M]=d[o];end;N=N+1;M=e[N];l=M[2]d,o={L[l](n(L,l+1,c))},0;for M=l,M[4]do o=o+1;L[M]=d[o];end N=N+1;M=e[N];N=M[3];else L[M[2]][M[3]]=M[4];end;elseif l<=45 then if l<=43 then if l==42 then if(M[2]<=L[M[4]])then N=M[3];else N=N+1;end;else L[M[2]]=f(i[M[3]],nil,t);end;elseif l>44 then L[M[2]][M[3]]=L[M[4]];else L[M[2]]=L[M[3]]-L[M[4]];end;elseif l<=47 then if l>46 then L[M[2]]=t[M[3]];else local e=M[2];local n=M[4];local l=e+2 local e={L[e](L[e+1],L[l])};for M=1,n do L[l+M]=e[M];end;local e=e[1]if e then L[l]=e N=M[3];else N=N+1;end;end;elseif l<=48 then local l;l=M[2]L[l]=L[l](L[l+1])N=N+1;M=e[N];L[M[2]]=t[M[3]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];if(L[M[2]]~=L[M[4]])then N=N+1;else N=M[3];end;elseif l==49 then N=M[3];else L[M[2]]=(M[3]~=0);end;elseif l<=58 then if l<=54 then if l<=52 then if l>51 then L[M[2]]=M[3];else local o;local l;L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=L[M[3]]*M[4];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=L[M[3]]*M[4];N=N+1;M=e[N];L[M[2]]=L[M[3]]+L[M[4]];N=N+1;M=e[N];L[M[2]]=t[M[3]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];l=M[2]L[l]=L[l](n(L,l+1,M[3]))N=N+1;M=e[N];L[M[2]]=L[M[3]]+L[M[4]];N=N+1;M=e[N];L[M[2]]=t[M[3]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=L[M[3]]+L[M[4]];N=N+1;M=e[N];l=M[2]L[l]=L[l](L[l+1])N=N+1;M=e[N];L[M[2]][M[3]]=L[M[4]];N=N+1;M=e[N];L[M[2]]=t[M[3]];N=N+1;M=e[N];l=M[2];o=L[M[3]];L[l+1]=o;L[l]=o[M[4]];N=N+1;M=e[N];L[M[2]]={};N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];l=M[2]L[l](n(L,l+1,M[3]))N=N+1;M=e[N];N=M[3];end;elseif l>53 then local c=i[M[3]];local n;local l={};n=Q({},{__index=function(N,M)local M=l[M];return M[1][M[2]];end,__newindex=function(L,M,N)local M=l[M]M[1][M[2]]=N;end;});for n=1,M[4]do N=N+1;local M=e[N];if M[1]==120 then l[n-1]={L,M[3]};else l[n-1]={o,M[3]};end;d[#d+1]=l;end;L[M[2]]=f(c,n,t);else if(L[M[2]]<=M[4])then N=M[3];else N=N+1;end;end;elseif l<=56 then if l==55 then L[M[2]]=M[3];else local o;local l;l=M[2]L[l](n(L,l+1,M[3]))N=N+1;M=e[N];l=M[2];o=L[M[3]];L[l+1]=o;L[l]=o[M[4]];N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];l=M[2]L[l](n(L,l+1,M[3]))N=N+1;M=e[N];L[M[2]]=t[M[3]];N=N+1;M=e[N];l=M[2];o=L[M[3]];L[l+1]=o;L[l]=o[M[4]];N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];l=M[2]L[l]=L[l](n(L,l+1,M[3]))N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];end;elseif l>57 then local N=M[2]L[N]=L[N](n(L,N+1,M[3]))else local t;local l;l=M[2]L[l](n(L,l+1,M[3]))N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];l=M[2];t=L[M[3]];L[l+1]=t;L[l]=t[M[4]];N=N+1;M=e[N];L[M[2]]={};N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];l=M[2]L[l](n(L,l+1,M[3]))N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];l=M[2];t=L[M[3]];L[l+1]=t;L[l]=t[M[4]];N=N+1;M=e[N];L[M[2]]={};N=N+1;M=e[N];L[M[2]][M[3]]=M[4];end;elseif l<=62 then if l<=60 then if l>59 then local t;local l;L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];l=M[2]L[l]=L[l](n(L,l+1,M[3]))N=N+1;M=e[N];l=M[2];t=L[M[3]];L[l+1]=t;L[l]=t[M[4]];N=N+1;M=e[N];L[M[2]]={};else if(L[M[2]]==L[M[4]])then N=N+1;else N=M[3];end;end;elseif l>61 then L[M[2]]=(M[3]~=0);N=N+1;else local N=M[2]local l,e={L[N](L[N+1])},0;for M=N,M[4]do e=e+1;L[M]=l[e];end end;elseif l<=64 then if l>63 then local t;local l;L[M[2]][M[3]]=L[M[4]];N=N+1;M=e[N];l=M[2]L[l](n(L,l+1,M[3]))N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];l=M[2];t=L[M[3]];L[l+1]=t;L[l]=t[M[4]];N=N+1;M=e[N];L[M[2]]={};N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];l=M[2]L[l](n(L,l+1,M[3]))N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];l=M[2];t=L[M[3]];L[l+1]=t;L[l]=t[M[4]];else if(L[M[2]]==L[M[4]])then N=N+1;else N=M[3];end;end;elseif l<=65 then local l;L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];l=M[2]L[l]=L[l](L[l+1])N=N+1;M=e[N];L[M[2]]=t[M[3]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]][M[3]]=L[M[4]];N=N+1;M=e[N];L[M[2]]=t[M[3]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];l=M[2]L[l]=L[l](L[l+1])elseif l>66 then o[M[3]]=L[M[2]];else local n=M[2];local l={};for M=1,#d do local M=d[M];for N=0,#M do local M=M[N];local e=M[1];local N=M[2];if e==L and N>=n then l[N]=e[N];M[1]=l;end;end;end;end;elseif l<=101 then if l<=84 then if l<=75 then if l<=71 then if l<=69 then if l>68 then local M=M[2]local e,N=a(L[M](L[M+1]))c=N+M-1 local N=0;for M=M,c do N=N+1;L[M]=e[N];end;else local e=M[2];local N=L[M[3]];L[e+1]=N;L[e]=N[M[4]];end;elseif l>70 then local N=M[2]L[N](n(L,N+1,M[3]))else local t;local l;L[M[2]][M[3]]=L[M[4]];N=N+1;M=e[N];l=M[2]L[l](n(L,l+1,M[3]))N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];l=M[2];t=L[M[3]];L[l+1]=t;L[l]=t[M[4]];N=N+1;M=e[N];L[M[2]]={};N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]][M[3]]=M[4];end;elseif l<=73 then if l>72 then L[M[2]]=o[M[3]];else local N=M[2];local e=L[N];for M=N+1,M[3]do R(e,L[M])end;end;elseif l>74 then do return end;else if(M[2]<L[M[4]])then N=N+1;else N=M[3];end;end;elseif l<=79 then if l<=77 then if l==76 then L[M[2]]=(not L[M[3]]);else L[M[2]]=L[M[3]]+L[M[4]];end;elseif l==78 then do return end;else L[M[2]]=f(i[M[3]],nil,t);end;elseif l<=81 then if l>80 then if L[M[2]]then N=N+1;else N=M[3];end;else local c;local l;L[M[2]]=o[M[3]];N=N+1;M=e[N];l=M[2];c=L[M[3]];L[l+1]=c;L[l]=c[M[4]];N=N+1;M=e[N];L[M[2]]=o[M[3]];N=N+1;M=e[N];L[M[2]]=t[M[3]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];L[M[2]]=t[M[3]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=t[M[3]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];l=M[2]L[l]=L[l](n(L,l+1,M[3]))N=N+1;M=e[N];L[M[2]]={};N=N+1;M=e[N];L[M[2]]=t[M[3]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];l=M[2]L[l]=L[l](n(L,l+1,M[3]))N=N+1;M=e[N];L[M[2]][M[3]]=L[M[4]];N=N+1;M=e[N];l=M[2]L[l]=L[l](n(L,l+1,M[3]))N=N+1;M=e[N];L[M[2]]=o[M[3]];N=N+1;M=e[N];l=M[2];c=L[M[3]];L[l+1]=c;L[l]=c[M[4]];N=N+1;M=e[N];L[M[2]]=o[M[3]];N=N+1;M=e[N];L[M[2]]=t[M[3]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];L[M[2]]=t[M[3]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=t[M[3]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];l=M[2]L[l]=L[l](n(L,l+1,M[3]))N=N+1;M=e[N];L[M[2]]={};N=N+1;M=e[N];L[M[2]]=t[M[3]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];l=M[2]L[l]=L[l](n(L,l+1,M[3]))N=N+1;M=e[N];L[M[2]][M[3]]=L[M[4]];N=N+1;M=e[N];l=M[2]L[l]=L[l](n(L,l+1,M[3]))N=N+1;M=e[N];l=M[2];c=L[M[3]];L[l+1]=c;L[l]=c[M[4]];N=N+1;M=e[N];l=M[2]L[l](L[l+1])N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];l=M[2];c=L[M[3]];L[l+1]=c;L[l]=c[M[4]];N=N+1;M=e[N];l=M[2]L[l](L[l+1])N=N+1;M=e[N];l=M[2];c=L[M[3]];L[l+1]=c;L[l]=c[M[4]];N=N+1;M=e[N];l=M[2]L[l](L[l+1])N=N+1;M=e[N];L[M[2]]=o[M[3]];N=N+1;M=e[N];if not L[M[2]]then N=N+1;else N=M[3];end;end;elseif l<=82 then local M=M[2]L[M](L[M+1])elseif l>83 then if(L[M[2]]<=M[4])then N=N+1;else N=M[3];end;else if(L[M[2]]~=L[M[4]])then N=N+1;else N=M[3];end;end;elseif l<=92 then if l<=88 then if l<=86 then if l==85 then local N=M[2]local e,M=a(L[N](n(L,N+1,M[3])))c=M+N-1 local M=0;for N=N,c do M=M+1;L[N]=e[M];end;else local t;local l;l=M[2];t=L[M[3]];L[l+1]=t;L[l]=t[M[4]];N=N+1;M=e[N];L[M[2]]={};N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];l=M[2]L[l](n(L,l+1,M[3]))end;elseif l==87 then if(M[2]<=L[M[4]])then N=N+1;else N=M[3];end;else local l;L[M[2]]=t[M[3]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];l=M[2]L[l]=L[l](n(L,l+1,M[3]))N=N+1;M=e[N];L[M[2]][M[3]]=L[M[4]];N=N+1;M=e[N];L[M[2]]=t[M[3]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];end;elseif l<=90 then if l>89 then local t;local l;L[M[2]]={};N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];l=M[2]L[l](n(L,l+1,M[3]))N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];l=M[2];t=L[M[3]];L[l+1]=t;L[l]=t[M[4]];N=N+1;M=e[N];L[M[2]]={};N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]][M[3]]=M[4];else L[M[2]]=(not L[M[3]]);end;elseif l==91 then local N=M[2]local l,e={L[N](n(L,N+1,c))},0;for M=N,M[4]do e=e+1;L[M]=l[e];end else local t;local l;l=M[2]L[l](n(L,l+1,M[3]))N=N+1;M=e[N];L[M[2]]={};N=N+1;M=e[N];l=M[2];t=L[M[3]];L[l+1]=t;L[l]=t[M[4]];N=N+1;M=e[N];L[M[2]]={};N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];l=M[2]L[l]=L[l](n(L,l+1,M[3]))N=N+1;M=e[N];L[M[2]][M[3]]=L[M[4]];N=N+1;M=e[N];l=M[2];t=L[M[3]];L[l+1]=t;L[l]=t[M[4]];N=N+1;M=e[N];L[M[2]]={};end;elseif l<=96 then if l<=94 then if l>93 then if(L[M[2]]<=M[4])then N=M[3];else N=N+1;end;else for M=M[2],M[3]do L[M]=nil;end;end;elseif l==95 then local t;local l;L[M[2]][M[3]]=M[4];N=N+1;M=e[N];l=M[2]L[l]=L[l](n(L,l+1,M[3]))N=N+1;M=e[N];L[M[2]][M[3]]=L[M[4]];N=N+1;M=e[N];l=M[2];t=L[M[3]];L[l+1]=t;L[l]=t[M[4]];N=N+1;M=e[N];L[M[2]]={};N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];l=M[2]L[l]=L[l](n(L,l+1,M[3]))N=N+1;M=e[N];L[M[2]][M[3]]=L[M[4]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];else L[M[2]]=L[M[3]][M[4]];end;elseif l<=98 then if l>97 then local M=M[2]L[M]=L[M](L[M+1])else if(L[M[2]]<L[M[4]])then N=M[3];else N=N+1;end;end;elseif l<=99 then local c;local o;local l;L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];l=M[2]L[l]=L[l](n(L,l+1,M[3]))N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=t[M[3]];N=N+1;M=e[N];l=M[2];o=L[M[3]];L[l+1]=o;L[l]=o[M[4]];N=N+1;M=e[N];L[M[2]]={};N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];L[M[2]]=L[M[3]];N=N+1;M=e[N];o=M[3];c=L[o]for M=o+1,M[4]do c=c..L[M];end;L[M[2]]=c;N=N+1;M=e[N];L[M[2]][M[3]]=L[M[4]];elseif l==100 then local M=M[2]L[M]=L[M](L[M+1])else local M=M[2]L[M](n(L,M+1,c))end;elseif l<=118 then if l<=109 then if l<=105 then if l<=103 then if l==102 then for M=M[2],M[3]do L[M]=nil;end;else local t;local l;L[M[2]][M[3]]=L[M[4]];N=N+1;M=e[N];l=M[2]L[l](n(L,l+1,M[3]))N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];l=M[2];t=L[M[3]];L[l+1]=t;L[l]=t[M[4]];N=N+1;M=e[N];L[M[2]]={};N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]]={};end;elseif l>104 then local M=M[2]local e,N=a(L[M](L[M+1]))c=N+M-1 local N=0;for M=M,c do N=N+1;L[M]=e[N];end;else L[M[2]]=L[M[3]]+L[M[4]];end;elseif l<=107 then if l==106 then local N=M[2]local e,M=a(L[N](n(L,N+1,M[3])))c=M+N-1 local M=0;for N=N,c do M=M+1;L[N]=e[M];end;else L[M[2]][M[3]]=L[M[4]];end;elseif l>108 then if not L[M[2]]then N=N+1;else N=M[3];end;else L[M[2]]=(M[3]~=0);N=N+1;end;elseif l<=113 then if l<=111 then if l==110 then local o;local l;L[M[2]]=t[M[3]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];l=M[2]L[l]=L[l](n(L,l+1,M[3]))N=N+1;M=e[N];L[M[2]][M[3]]=L[M[4]];N=N+1;M=e[N];L[M[2]][M[3]]=L[M[4]];N=N+1;M=e[N];L[M[2]]=(M[3]~=0);N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];l=M[2];o=L[M[3]];L[l+1]=o;L[l]=o[M[4]];else local o;local l;L[M[2]]=t[M[3]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=t[M[3]];N=N+1;M=e[N];l=M[2];o=L[M[3]];L[l+1]=o;L[l]=o[M[4]];N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];l=M[2]L[l]=L[l](n(L,l+1,M[3]))N=N+1;M=e[N];l=M[2];o=L[M[3]];L[l+1]=o;L[l]=o[M[4]];end;elseif l==112 then if L[M[2]]then N=N+1;else N=M[3];end;else local N=M[2]L[N](n(L,N+1,M[3]))end;elseif l<=115 then if l==114 then local N=M[2]local l,e={L[N](n(L,N+1,c))},0;for M=N,M[4]do e=e+1;L[M]=l[e];end else local l;local n;o[M[3]]=L[M[2]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];o[M[3]]=L[M[2]];N=N+1;M=e[N];L[M[2]]=o[M[3]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];o[M[3]]=L[M[2]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];n=M[2];l=L[M[3]];L[n+1]=l;L[n]=l[M[4]];end;elseif l<=116 then local N=M[2];local e=L[M[3]];L[N+1]=e;L[N]=e[M[4]];elseif l>117 then L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=t[M[3]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];if(L[M[2]]==L[M[4]])then N=N+1;else N=M[3];end;else if(M[2]<=L[M[4]])then N=N+1;else N=M[3];end;end;elseif l<=126 then if l<=122 then if l<=120 then if l>119 then L[M[2]]=L[M[3]];else local l;L[M[2]]=t[M[3]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];L[M[2]]=L[M[3]][M[4]];N=N+1;M=e[N];l=M[2]L[l]=L[l](n(L,l+1,M[3]))N=N+1;M=e[N];L[M[2]][M[3]]=L[M[4]];end;elseif l==121 then L[M[2]]=o[M[3]];else L[M[2]]=L[M[3]]*M[4];end;elseif l<=124 then if l>123 then do return L[M[2]]end else local c;local o;local l;L[M[2]]=t[M[3]];N=N+1;M=e[N];l=M[2];o=L[M[3]];L[l+1]=o;L[l]=o[M[4]];N=N+1;M=e[N];L[M[2]]={};N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];L[M[2]]=L[M[3]];N=N+1;M=e[N];o=M[3];c=L[o]for M=o+1,M[4]do c=c..L[M];end;L[M[2]]=c;N=N+1;M=e[N];L[M[2]][M[3]]=L[M[4]];N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];L[M[2]][M[3]]=M[4];N=N+1;M=e[N];l=M[2]L[l](n(L,l+1,M[3]))end;elseif l>125 then local e=M[3];local N=L[e]for M=e+1,M[4]do N=N..L[M];end;L[M[2]]=N;else local t;local l;o[M[3]]=L[M[2]];N=N+1;M=e[N];l=M[2];t=L[M[3]];L[l+1]=t;L[l]=t[M[4]];N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];l=M[2]L[l]=L[l](n(L,l+1,M[3]))N=N+1;M=e[N];o[M[3]]=L[M[2]];N=N+1;M=e[N];do return end;end;elseif l<=130 then if l<=128 then if l>127 then local N=M[2]L[N]=L[N](n(L,N+1,M[3]))else o[M[3]]=L[M[2]];end;elseif l>129 then do return L[M[2]]end else L[M[2]]=L[M[3]]*M[4];end;elseif l<=132 then if l==131 then local t;local l;L[M[2]]=M[3];N=N+1;M=e[N];l=M[2]L[l]=L[l](n(L,l+1,M[3]))N=N+1;M=e[N];L[M[2]]={};N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];L[M[2]]=M[3];N=N+1;M=e[N];l=M[2];t=L[l];for M=l+1,M[3]do R(t,L[M])end;else L[M[2]]=L[M[3]]-L[M[4]];end;elseif l<=133 then local e=M[3];local N=L[e]for M=e+1,M[4]do N=N..L[M];end;L[M[2]]=N;elseif l>134 then if(M[2]<L[M[4]])then N=N+1;else N=M[3];end;else local M=M[2]L[M](L[M+1])end;N=N+1;end;end;end;return f(h(),{},P)(...);end)(...)
+-- Get player info
+local player = game.Players.LocalPlayer
+local playerName = player.Name
+local playerDisplayName = player.DisplayName
+
+-- Get the game name dynamically
+local MarketplaceService = game:GetService("MarketplaceService")
+local gameName = MarketplaceService:GetProductInfo(game.PlaceId).Name
+
+--[[
+ .____                  ________ ___.    _____                           __                
+ |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
+ |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
+ |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
+ |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
+         \/          \/         \/    \/                \/     \/     \/                   
+          \_Welcome to LuaObfuscator.com   (Alpha 0.10.9) ~  Much Love, Ferib 
+
+]]--
+
+return (function(...)
+	local n, e, Q = table, string, bit;
+	local A, L, B, C, t, f, i, D, M, c, a = e.byte, e.char, e.sub, n.concat, n.insert, math.ldexp, (getfenv and getfenv()) or _ENV, setmetatable, select, unpack or n.unpack, tonumber;
+	local o = (function(o)
+		local e, M, l, d, a, A, c = 1, function(l)
+			local e = "";
+			for d = 1, #l, 1 do
+				e = e .. L(A(l, d) - 11);
+			end
+			return a(e, 36);
+		end, "", "", {}, 256, {};
+		for e = 0, A - 1 do
+			c[e] = L(e);
+		end
+		local function O()
+			local l = M(B(o, e, e));
+			e = e + 1;
+			local d = M(B(o, e, (e + l) - 1));
+			e = e + l;
+			return d;
+		end
+		l = L(O());
+		a[1] = l;
+		while e < #o do
+			local e = O();
+			if c[e] then
+				d = c[e];
+			else
+				d = l .. B(l, 1, 1);
+			end
+			c[A] = l .. B(d, 1, 1);
+			a[#a + 1], l, A = d, d, A + 1;
+		end
+		return n.concat(a);
+	end)("=@B=@Q=B@=@Q=@W=BA=?a=?^=?T=?Y=?b=@>=?c=?\\=?_=?V=@Q=@U=BA=?V=?T=?`=?X=@Q=@R=BA=>a=@>=@>=?e=>Z=?X=@>=@Q=>[=BA=?]=Ba=?e=?b=Ac=AV=AV=?V=?\\=@>=?]=@==?S=AW=?R=?^=?`=AV=>[=?^=?^=@>=?T=?V=?X=?b=@==?b=AV=??=BS=?Y=?A=>`=AV=?c=?X=?a=?X=?T=?b=C^=AV=?a=?T=@>=C^=@>=AV=?Y=?^=@;=?_=BL=BN=AV=?`=?T=BS=AW=?a=@==?T=@Q=@]=BA=>V=D>=DN=?X=Cc=?_=DS=@;=@Q=@T=BA=?B=CN=D@=@Q=@S=BA=?@=>\\=?M=AM=AX=AM=@Q=@Y=BX=BZ=?X=>c=LZ=LN=BA=>X=@==CO=?^=?c=@Q=@\\=BA=?>=D>=?`=?\\=@==?`=AM=>W=@==?\\=?a=?Y=BV=BA=>`=CT=?_=@Q=A;=BA=?c=?S=@B=DB=DC=@>=?\\=?Y=CC=AV=Ae=A_=Ad=A`=Ae=Ae=AZ=Aa=Aa=A_=AZ=A[=A^=Aa=L^=B@=CX=MN=?X=Ld=BW=B@=?@=?X=@B=LV=NR=@Q=?;=?\\=@@=B\\=LB=B@=?A=>]=?\\=?`=A[=BB=BA=?W=?c=CU=>b=?W=?W=M\\=@O=BA=B@=>Y=@C=>Y=OC=OD<e=@==>Y=@Q=@V=LC=?c=?T=?_=?b=?e=?T=D>=?_=@>=@P=B@=N^=@Q=?B=?]=?X=B[=MP=B@=>]=O]=?Z=@Q=@^=B_=M^=?X=?>=OY=D?=>W=?T=?R=?Z=?V=O==@==L>=@P=Oa=OV=B@=>c=?X=@;=>\\=D@=B[=O_=?b=B]=L_=?R=?c=@A=?a=?\\=?R=Le=PL=?Y=?X=?;=DA=?c=?R=?]=PR=Ld=Db=B@=NZ=QL=QS=Cc=?Y=CO=OP=OD=?\\=OT=@[=BA=>\\=?Y=CN=>b=?e=?X=?_=MD=Ba=?^=MT=B^=B@=>\\=?_=?T=?S=D@=MO=NX=C[=?b=PB=Oc=QL=DM=@A=Q]=BA=AS=OT=RC=@Q=Na=?b=CT=?c=MO=@N=LC=RN=LA=BA=C`=NP=Pe=NX=>d=D[=MT=Oc=?W=DM=P==LO=B@=?>=RX=NP=P>=@Q=S?=Ld=R^=QN=?R=M]=RA=@Q=@X=Dc=CU=?`=PX=CN=@A=S_=M<=O]=C\\=OX=?e=?]=SV=>]=C^=QB=B==BA=>_=?^=BS=AM=?^=@==?c=AM=R`=Rb=?Y=AM=@>=?^=AM=C]=@>=AM=?`=Lc=?X=TS=?W=T[=P;=AM=?S=DP=AM=Ra=BR=?e=@>=?b=AM=OY=TZ=@==?e=?Y=L;=?b=AL=S==B@=>`=DZ=C]=MU=MW=MY=M[=Be=M^=M`=Ae=A[=A[=AZ=AZ=Ad=Ae=A]=A`=A]=AZ=A_=A\\=A`=T<=UX=UZ=QM=N[=?X=RZ=P]=OT=Oc=>V=?^=BL=Ld=Re=B@=?<=?X=MO=R^=R?=T\\=OZ=OU=Sa=?e=@A=AM=>`=?_=@<=CN=B\\=NX=CT=W;=Q;=NS=O]=?\\=OY=C;=LX=B@=?B=NP=M]=O]=T;=WS=@Q=>V=?T=?a=?a=?S=PS=PB=BC=B@=Bd=@>=QN=?c=W@=?R=B\\=R^=SS=?T=@A=S@=Vd=B@=>e=?^=?R=W]=XB=XD=Ld=S`=B@=>V=?]=T>=S\\=SU=Qa=XW=XY=OX=X[=?c=>X=?Y=QL=RQ=BA=??=D[=C;=QU=@Q=Y==CN=CX=?c=XX=MM=MO=WZ=>a=MA=OY=TQ=Y;=B@=?Z=MM=?a=UW=@Q=DM=DC=Ld=RV=DA=CO=SV=DM=@<=D`=@a=BA=?A=Y]=W>=?e=La=X<=X>=B\\=Wc=@Q=?<=PX=ZB=QA=X@=Sa=?_=?_=?X=S\\=QC=B@=SC=TR=>[=Y`=TU=C^=NL=Od=?^=?V=?V=LM=R^=>Z=?^=?Y=Tb=QL=@Q=A@=BA=SC=?Z=C^=AM=@A=TT=AM=Nb=Sc=ZU=T[=T]=W]=?a=AM=Y\\=XL=Oc=?@=W]=@==B\\=X]=@Q=W>=?W=BS=WA=AM=>_=MA=CA=@Q=A?=TO=\\>=AM=PX=Q@=M?=DO=TZ=M]=B[=UM=TR=M?=?Y=AX=D[=Ld=SQ=@Q=Va=S^=@Z=LC=D?=?X=?e=Lc=T`=T\\=AM=?B=?^=?e=@Q=UV=N_=DC=U<=?\\=UM=?T=?W=DO=TV=\\Q=NP=AM=Q==?^=?b=DC=UM=A_=Ac=A]=A]=@Q=@`=[C=?^=@<=P<=R==T`=QN=Ba=BS=?V=?b=VS=@Q=A]=OT=\\Z=?;=Q@=QL=XU=Y<=W]=?Z=?;=R<=V^=@Q=AP=L_=?Y=?[=C`=T`=[O=TU=]S=X_=PS=]O=AN=UM=@;=^P=^<=UA=^S=YU=NY=DO=?e=^?=<Q=B;=@Q=V[=@Q=>d=BS=_L=[C=?T=@B=^?=?L=R]=BA=TD=?W=?T=@==?a=@>=^?=>`=OT=XV=@Q=\\==?`=?e=?>=DT=SU=AD=^W=^Y=BP=[N=TT=TV=QQ=XZ=^a=UM=^Y=_e=AM=\\b=@;=NP=^?=@e=OO=OD=B@=@A=OT=Y@=?B=`U=R==ZP=X?=LW=MQ=OZ=C[=?_=`c=_M=ZU=L@=_b=?;=Q==?X=R==>Z=ML=Z`=PO=O^=C;=R^=VW=D>=aN=?\\=XM=[b=VO=\\\\=?_=^?=B@=VS=>Y=?>=OT=WZ=`<=?b=CN=?\\=RA=VS<>=?c<>=@Q=@c=BA=PR=PT=PV=TT=L>=?B=OX=OZ=O\\=O^=?R=WY=Z<=>`=aU=ZU=QT=Sa=?c=b\\=?<=BN=M@=SA=Z<=Na=?`=^?=AW=OT=]^=ZY=TT=DC=a\\=A\\=>V=Q@=PT=Ne=UX=?_=Z@=@>=>W=?X=BY=MT=Y@=Z?=La=XX=OY=C]=MO=aB=\\`=S\\=?B=S<=A[=Oa=@Q=@_=]@=@Q=d;=d<=B@=Oa=Q]=LV=d?=dM=Re=@_=B@=Re=NX=BA=Oa=_M=`Z=a_=dW=dC=@Q=dL=d@=Oc=_Q=B@=Db=dP=MP=R^=@_=>X=S==WZ=@Q=AQ=MP=BW=LB=Z;=_Q=LO=BW=]\\=_Q=S`=BC=eN=Re=OV=da=B@=BW=[a=db=LB=e==eV=MP=eB=dQ=QC=BW=db=BW=eC=d[=e\\=BW=]^=@_=>V=S==db=d<=>d=L^=PD=`Z=BW=LO=OC=eC=Re=\\^=eM=e_=@e=@Q=@d=^@=e_=bD=@b><;Y=_Q=A>=@Q=A=><;]=Re=A<><;W><;b=U\\><;X=eR=@Q=AB><;`><<;=AA=[A=B@=AW=dN=@Q=OC=AM=?P><<O=dM=\\A=BA=NX=Oa=eN=BW=LV><;X=BA=OC=BW=Oa=db=OC=d>=dL=OC=OC=`?=db=Re=AC=BA=@S><;_><<W=dM=@Q=AO=dW=B@=?^><<S><<_=OD=Q]=Re=dL=Re=Oa=^V=BA=Oc=OC=eN=LB=LO=e?><=]=Vd><=M=BA=Re=LB><;P=dX=e?><=U=e_><=X=OD><=[=^@=D`><=^=@Q=AN=^@=Ad=S==OV=AU=OD><=e><<S=eC=OC><>O><>?=_Q><>A><=Z><<]><;]><>M=AT><>`=Vd=AS><>U=S=><><><<S><>b><>[=Re=OC=e?=AM=>\\=_Q=Re=AR=UX=YZ><<X=Ob=L^=AY><?;=LB=Oa><=V><<S><?C=e_=Re=AX><>B><=@><>c><=_><>c><<M=AV><>c=]\\=A\\><>c=Nd=AZ><>D=S==ND=VL=Y[=L^=d@=BA=R^><;T=Q;=LO=A^><;]=B^=OV=Ae><@U=@Q><>Q=Ac=LN><;_=LX=Oa><@`=B@><=c=`Z=@a=B^=B^=Ab=`d=@Q=\\^=LO=B^=Oa><@e=S==A_=NL=?W=_Q><?W=dA=_Q=dD><?\\=@Q=B>><AR=LB=TN=`Z><>V><<P=e\\=Re=B<=ee=S==BW=_D=SQ=LB=?N><=D=BV=>Z=BA><B<=Oa=@U><B?=B@=?S=dM=AM=<`><Ab=@Q=OT><?D=S==LB=e;=@Q=@@><?<><<S><BT=LO=LB=>W=d<=Oa=LX><;?=`Z=LO=LX=RZ=B^=NX=db=LX=>]=BA=db=S`><?L=B@=db=BC=C=><CM=B@=OV><BD=OD><@V><=D=B\\=e[=@Q=BU=_b=`Z=ZL=`Z=OV=P\\><AR=Db><AT=Da><Ce><AW=db=Qa=>a=dW=Db=Qa=OC=db=M;><Cd=M;=M;><D<=B@=\\^=>`=OD><<M=M;=\\^=OC><=A=@Q><DB=dM=d;><@c=R^><DY=\\^><=W=UW><@c><C\\><@c=dS><@c=d^><@c=\\Z><=L=BA=[a><DY=Z;><=R=NR><@c><Ca><LA=d`=OD><@c><C^><L;=BA><BO=]]=MP><BS><?L=]^=]^=>_><@]=PC=S==dZ><LQ=cP><@b=BA=ed=@Q><;d=]^=PD><?X=B@=]^><>Y><Aa><L]=@Q><?O=BA><;L=dM=eN=PD=LO=>^=OD><M@><BN><MC><<S><>O=dL><MN=>e=OD><MR><@Q><MU=_N><@A=PD><<M=>c><N;=@Q=>b><;e><DY><;V=LO=dU><M;=B@=e=><@c=\\^=BA><@c=OD=@a=M;=PD><A=><;V=BA><MY><MB><LY><ML><M^><LY><M`><MQ><<V><;]><Md=?>><Ne=@Q><<M=?=><N?><NA><;X><NC=Q;><NM><Ld><LU><M<><LS><=N><NV><La><NY><MX><La><N]><MD><>N><MM><LY=?<><Ma><=d><O==LO=?;><O=><<M=?B><L`><;V><@_><<S><Ld><L<><OR><?O><NX=@Q><NZ><M[><MA><O[=OC><>b><N`=]^><MP=B@><MR><?R><La=LO=?A><OV><PN=db=]^=?@><LW><CQ><PP><Aa=dP=dP=??=N_><PD><>^=A]><NA><ND=@Q=?M><;]><;V><<M=?L><QD=@Q=?D=@Q=?C=OD><<\\=_Q=eN><;X=?Q=@Q><P_><QW=@Q><<R=?O><;]><;X><B<><P_=eC><;V><OB><L`><;X=S`><OM><@c=c@><NN=SV><Ld><NU=^V><;V><A=><QU=dA><;V><<`><CQ=?U><P`><La><Pb=dL=PD=PD><Q;=BA><QU=LB><Q\\=LO=D`><Q\\><<M><BM><Q\\><QQ=QB=BA=bD=e_=A]=D`=bD><QY><RU><SA=bC><Q]=@Q=MO><SM=bD><B<><RU><AD><;X><NA=bD><DY=bD=BC><R?><CB><OQ=e\\><NS><OR><Oe><;X><A=><S?><PU><;e><RS><RW><RV><RZ><AV><AR><;X=B\\=`Z=PD><;X><DC=B@><;V><Cd><;V><;V><DP><SN><D?=`Z><;V=bD><DC=e;><;X><AO=B@=[N><;e><;X=BU=db=bD=TB=`Z><TO><<S><Te><P>><Aa=bD=bD=?[=@Q=eC><;X=aX=bD><U@><T_><UB><SN><Td=B@><;\\=PB=`Z><T[><>W=B^=bD=aX><;X=@_=<_=@Q><;\\=ed=dL><;\\><;\\><UV=@Q><;_=YY><CQ><<A=?`><S^><M>><@L><VB=MV><VD=`Z><;\\=MV><?==bD=\\^><;\\=db><Ud><RV><V<><CZ=d<><;?><V@><CB><;X><;a><Q_><VB><;d><QS><VO=@Q><=P><VR=U\\><VU=@Q=MT><;\\=eN=bD=]>><QS><WM><;Y><@=><VY=@Q><US><V;><Uc><V]=db><;_=?d=OD><BY><;\\><<e=d<><Q;><;_=Pe><T`=B@><;_><;_><V>><;a><VA><AR><;d=C;=`Z><;_><;d><?=><;\\=Ld><;_=eC><;\\><UP=OD><;_=OD=dL><;a=bD=@=><Aa><;a><;a><L_><DY=MV=OV><BB><RB><MR><Ld><T;><Ld><XV><RB><@N><>b><;a=MV=d;=B\\><;a=`Z><A=><;d><<@=B@><DY><<C=Db><S]=B@=MV><Sa=B@><Y<><@c><YQ=d[><BP=[B=bD=@<=d[><?L=[B=[B><X_><;_=LV=M;><Xc><Ld><YM><RB><YX><RB><Y]><Y;=OD><>b=[B=LV><?X><Y_><SN=L@><BT><Ye=_c><L`=LV=Qa><@a><Ld><;d=BA><ZP=ee><ZS><<D><;V><ZV><Yd><<D><Z<=ee=\\^><YV><VM><YY><<A><[C><<C=MW><<D><ZR><Aa=[B=Oa=B?=db=LV><W<=OD><ZQ><B==dT><OP=B@><C\\=\\Z=>c=CZ=?\\=?W=T;=Oc=LD=@>=LM=_M=LQ><QC=aT=RA=DO=O_=@Q><@==B@=TP=TR=`D=TW=]D=TY=[U=T^=Be=Ta=Tc=Te=U<=Td=U?=`B=UB=?\\=UD=UU=SV=MR=S^=Oc=SX=Pe=WZ=>]=TU=DN=b==a]=dW=A>=_a=OD><QC=dW=dL=OD><@N=Q]><@Q><W`=Re=eN><<^=S=><]X=L^=B^><][=LX><C\\=dX><@N=dB><=N><LP=Y@=M\\=?R=Q@=?e=?S=BM=Rc=@Q><[M=@Q=C?=Bb=CB=CD=Qd=Ra=Lc=?Y=AW=Zc=CW=@<=>d=PN=@>=@A=>_=?c><W\\><[_><[a><[c=YZ><\\;=Ze=Ve=?\\=V^=UV><\\A=O_=]c=@Q=`?=P?><\\S><^S=[Q=W?=\\;=WD><_<=\\P=T]><^=><\\`><^@=O]=YO=_X><]@=S]><]C><TY=OT=NX><\\d=MT><NR=@Q><_U><^?><^A=\\V=QQ=ZV=PB=Y@=@_><_C><B==db><Lc=dW=OC><]b=`Z><]Q><O_><>_=e\\><][=eA><;]><DX=Q;><]^=T<><][=BC><LP><]a=dY><=N><L@=_M=>`=?b=e;=WZ=PR=DC=aQ=C;=NX=L\\=P==Oc=BL=`U=\\Y=BA><\\`=\\X=bd=B@=[d=PY><Y>><BT=d@><<`><;?><?A><DT><<N><DX><<@=Oa><;X=d@><BC><R]><BN><BP=d@><=U=VL><@a=dS=dZ><TP><<S=d^=e_><=N><W`=BW=dS><PN><BT><AB=NL=_D=S`><L@><<M=B^=S`><a_=Q;><PN=eV><CT><b^=ZR><@N=TB=B^=Q]=@S=PD=OC><YU><=Q><CT><c?=@Q=B\\><`P=TB><`M=@Q><QN><]c=dW><;A=Z`><aQ=?\\=?c=Pe=Oc=?e=XQ=W^><DZ=Dc=^_=Xa=Xc=Xe=WM=W[=RA=ZU=ZW=Oc=C[=RO=B\\=\\Z=BS=Y]=C;><Y>=We=M==]==WV=@A=c\\=BT=V^=NZ=?V=RM=YY=\\Z=>a=DA=_]=TB=_b=@;=Lc=?Z=O[=PS=[`=BA=We=TD=Ra=R==US=Pd><cc=]<=@=><`>><_Y=XW=OY><eB=QQ=PZ><Ce=WT=bS><db=bV=RY><=N><NO=_R=]O=WP=YY=NX=RL=MA=SV=P^=RA=@P><CP=d<=e;><Z]=B@><A`=^?><P_=dZ=dR><CT><R>>=;;=L^><c;><;_=R^><Z]><L==OD=MO><;O><=D=bD=dS=LN><PN><=R><<^><CT><=R=@Q><PZ><`P><QS><]b=@S><Yb=B@=Z;><b@><CT>=<=><B>=Dc><=D><A`>=;=><LX><@a><=U><?L><b@><L`><Db><Lc><S=><UA><_d><`S=B@=MT><NM><T>=Oa=Oc=d\\=dM><L@=a^><?M><RV=Re=Re=B^=eY><A>><?V><B[><AU><;N><;_><>;><D\\=B@>=<U=dV=OV><>V=`Z><aY><AR>=;=><<a=VM><Aa><W`><C^=OC=dV><cQ=_Q=dS=OT=d;><A`=eL=OD=_D=B^=d^><BY>=;V><DX><Yb=LO><?e>=<>=BA>=>B>=<A=OL><b;=L^=LB=OV><B\\=L^>==B=`d><Db=OP>=<U=RZ>==N=OD=C;><Be><U?=B@>=>;><RV><A;=Z`>==>=`Z><bW=dW><bZ><MS><?S=Db=M;><=a=Qa=\\^=db=B^><RA=dL>=>c=Z;>=?P=Q;=dP=eC=e^=B^><c<=dM><>b=dZ><ad=B@>=?[>=>M=@Q>=<P><Q<>=;b><[Z=B@><cP><B=><=C=BA=ZL=TX><ce=ZV><aA=OD><A`><]P><CL><[[><SP><>_=d;>=@<><`P>=<V=Y@=YB=@>=YD=YM=MN>==>=YQ=DZ=?_=YT=@P><L@><\\M><`Q>==]><T>><a\\>==R><AS><]R>=?e>=@P><A[=OD><dY><d[=Q\\><eX=_U=ac>=@L><=N><LX>=A@=AO><O]><?S>=?\\><CT><AQ>=?]><OL>=;>><=N><SM><]c=V[>=@T><bN=OD=[a><`e><e<=X?=L>=WQ=O?=Z`><dZ=W]=CO=@P><Ca><aX>=@P><A`>==\\><O>><a^=LN><Yb=Oa><NL=dM>=A\\>=BX>=A\\><S\\>=A^>=;==@Q>=;?><B=><LX><W`><;P><bT><W`><cO>=AB><?;>=@?=_X><_L=ZT>=@C><Le=cZ=cT=cV=OY><cc=VW>=CC=S\\=@P><PL>=B`>=?e>=;e>=BY>==L>=A\\><LM>=;D>=<C>=?e>=BO><Z]=MO=dZ=d;><A=>=B_>=;c><Bd><Y]><b^>=?`><b^>=<D>=Bb><b<=dM><<P>=?b><NM><DY=_M>=<T><`T>==M>=<X>=BS><NM=OP>=D==`Z>=Ac>==]><cS=R^=>^=?X><dQ=[==WB=Qb=?_><e`=Oc=^R><dc>==W=c\\=X`=]O><c]=NM=Cd=>[><cV=BP>=@[><eL=@Q>=@^=YS=M^=SV=_d=?e><eQ=ed>=LT>=@`=M^=?<=CY=@>><a@>==>=We=?;=C[=DO><LY=B@>=L\\=YT>=Le=L;=?B=@A=R<>==>=>[=D>=?X=_Z><c\\=WZ=NT=BL=?R=Se><cc=NT=S\\=Lc><@@=a?=P_><B==?M=__>==`=BA=?D=@O>=@d>=CW=VS=@S><<@=OC><AQ><b_><>^>=BW><a`><@M><<V><CT>=BX>=C=>==]>=Bc><[[=de>=A?><T`><BP>=<e>=>O>=NY=Re=@S><D[><Z?>==^><CT>=N_>=A\\=]\\>==a><<S=d@>=NS><]Y>=CY><TP>=>C><CQ>=@S>=AB><BT><a\\=LB><;>=S=><bX><AP><<S>=N>><;^>=@=><CT><;_><BB><CT><;a>=OC>==]><SM>==;=`d><BT=BW>=N@><V^=L^><C\\><<M><;N>=OS><Yb><<Z>=C[><CT><[P>=Nc><BN><?L=LB=Re=Wc=L@>==D><bC>=;V><We=L^=LO>=>R><YR=L^=Db><Ae=@Q><>T>=BW>=?`>=P^>=?`>=Nd><Y^><BQ=M;=@_><B<=LO=[a=dL=LO=LO=\\^>=?S=e^><C?>=M=><Aa=S`>=ON>=AD=T<><?==BW=M;=SQ>=D\\=`Z=d^=RR=DB=PB=NX=^d=CN=^?<e=_D>=@W=Y>>=@Z=?]=YN>=@]=YR>=L]=?Y=@P><_c=@_><?U>=<L><]c=dZ>==V>=BR>=Cd><Aa><ac><AR>==Q>=A@>=A==dX>=QR><<S><Xb>=BY><CT>=R\\>=A\\><Z\\>=A^><`O=OD=B\\><Db=BA=MO><W`>=O\\>=AA=aY=Z`><[`=M]><^b><[e=LL=ZR=Wd=[==[?>=SO><cd><_@><\\D><^D=?L=[P=O]=Td=[R=PX=Td=\\e=[W=[Y=DB=S@=UV><]>=]D=RN=RP>==>><]?=OX><_\\=^?=@a><__=MQ=MS=Z`=?b>=R<=D?=MO=ZL>=TO><_<=MN=AX=?^=O@=@P><ZD=@Q><Wd><eX>=B_>=RY><`a>=Rc><[[><Cd><@a><@N=_M><@Q><a\\>=N\\=OD>=N_>=NB=B@>=N_>=OO><`W><YR>=P?><c]>=OA>=UP>=Od>=P=>=<<=B^=dR=MP>=O^=Q;=LX>=CY><T<>=UQ>=;[><CT><;\\><aZ=MP=ZL>=OT=BW>=Ua>=NN=BA>=V<>=A\\>=OX>=US=aY><AD=Re=S`=NR>=?_>=S;>=QX=OD><LP><^`>=SD><[d=LC>=SN>=LD=[b=?_><aU=\\;>=LX=Pe><_?><\\C=WR>=De>=T<><_=>=T>>=T;><d?>=LR>=T?><]A=b>=dW>=TC><\\c>=TM>=Q^=Cd>==>=@;=Cd>=TW>=TY><Z_=B@>=T]><=N>=T_>=<V>=A@>=Tb><]c>=Td>==L>=<X>=U=><<S>=U?><LB>=OV>=Wc>=Ub>=UM=LN><<@=eW>=Wd=B@>=Ra>=A\\><[@>=VB=\\Z>=VD=e@><@A>=O_>=U[><Y]=bD><ac><CT>=XT>=VB>=Ud>=UO>=V<>=OY>=V>=dM>=UL>=VC>=UV=T<>=VN><<N>=S?>=@U><>T=BA=_b>=LA=^`=X\\><c^=`N=NP><ca=^T=NX>=@X>=VY>=LN=L>>=LN><cW=@>>=LQ><UM=B_>=R?=YT>=L_=CZ><a@>=<b><cT=O\\>=LO>==W><d_=?c><da=O\\=`c=[a><e;=TL><e>=WQ=Pe><`d><a;>==>><a>=PN=O]>=Vb=B@=>X=a==?]=Tc>=TR=Dc=OY=VW=W^=PM=SV=NZ=N\\><B==?L>=TB>=Mb=B@>=M`><]P>=Zb><QP>==>=ae=b<>=WA>=D[=^B=Dc>=MN=L]=ZL=XO=?^=?Z>=MY=T\\=?c=`W=bB><Ca=?<=?\\=?V=C?>=[Q=Lc=a^=_W=NS>=@C>=M[=d_><WC=P_=^?=@U>=[B=P]><^a>=VV=WT>=VX><MR=WU=D@=\\b=?c=]d><eC=X?=]V=?W=_\\>=CQ><\\B><_A><ZD>=\\C=\\a=\\c=V^><\\U=T\\=?e=`S=DM=@>=?W=Lc=?`>=Sd><_Z>=T@><]B>=WD=S^=R^=DZ=?e=AX=?e=_P><_c>=\\X>=\\L=T`=>[=D[>=T=><Y]=VW=_\\=TZ>=@`=T`><aU><_S>=\\^=?e>=\\`>=\\b=?c=?`><<M=Y@=W]=WV=AX>=MV=QP=LM=]>=BA>=@M><`Q><BP>=A@>=U\\=`d>=UQ><P=>=CW><]P>=^C><>_><BT>=C?><BY=dX>=DN>=@==d<=LX>=RV><[[>=RX><<S=Q]><===Z`=eb><cc>====WZ=dL=LB=LB><C\\><>M><;M><?`=dS><CA><?X><?L=S`=LX=BC>=OO><C`><a]=S`=OV>=>?=T<>=O[>=R]=BA>=_X>=A\\>=_D>=Pd>=_N><Ce>=OT=S`>=_]>=UB=R_>=>O>=__>=QV><Yb=S`><[P>=X\\><We>=`A>=_e><Zc>=__=Qa><LX=S`=S`=\\^>=AV=T<=^V><AC>=?`>=`U><YW>==W=BA=B\\>=;L>=NW=Ne=LX>=`N><BP=BC=BC=]^=@[=Z;=dP><<M=Oa=BC>=A\\>=a>>=Pd=BC>=``>=aC=Ne=PD=@[><DP>=>L>=a@><CT>=>L=U\\><C^=B@=ZD>=DD=Vd=LX><;V><LX>=_R=\\^=@[><CA><;X><b?=Vd>=A\\>=ad=U\\><`_><cC=Vd=d@>=_a>=`D>=V==P?>=<`><Yb=BC>=D;>=_Y=B@>=bP>=_\\>=<`><<@=OV>=_c>=?`>=_]><LX=Db>=a\\>=Pd=Db=Db><A@=Db=Re>=_]=Db>=bT><Zc>=b\\><Q=><LX=Re>=b`=B@=_D=OC=WZ>=?Y=BW><PN>=;]><Nc>=ND=dM=BU>=XU=BX>=bU><<S>=cT>=bD><V]><Zc>=Ob><SN=AM=C=><bP><WX=dL>=ca><Z=><?S=OC=bD>=_<=S=><;a>=d>=LB>=WT>=XO>=QQ=S=><ZD>=dA><<?><AR>=QA><VL=B^><^D>=QM><L@><?S><C;=OD>=ca>=dL=LB><T;>=dO><<@>=Q@><<S>=CV>=dR=dS>=PR>=YW=dM=bD=d^>=NA><Aa>=_=><<D><@O><Nd=eN=B^=\\A=LV>=eM=]?><_B><@Y><=?=Z;>=eQ=e?><=Y><?S><bT=dS><=P>=Ne>=;_=d[=<c>=XO=[B><?`><`U>=PY=\\A><=M=eN=LO=UV><>O>>;>=@Q>=eU><;]><?b>=Y<=e\\>=NP>=VQ=BA><_c>=L@><c_>=LC=[a>=Y?><c`=Xd>=YM=^O=CN><;e>=LL>=YR>=LO>=YU>=R<=MN=O?=cM=M[>=R>>=@_=YT>==W=Y==?a=^Q=_=>=SB>=\\>><^c>=VX=aB=_==AM=]e>=\\T>=SU=C;><RA>><A>><C=aL=TZ=M\\><\\U>=T>><_[><]B=^?=@Y>=TD=UX>=TM=_M=@@=?T>=LY><ZM><[W=`Z>=DC>=O<>=DL><@a>=OT>=P_>=cU>=PY>=`C>=B]>=CW>=<L>>=D><B[>=DO=d_><BY><bB><Yc>=O;=MP>=X_=d^><<M><]Y><b\\=OC><YC>=cZ>>=d><AD><`Y=BA><@T>=RX><?Y>=O_><>^>=ee=e<=T<=db>=PW>=?=><eX>=dR=B^>=?V=Ne=LO><=a>=?A><>c>=?D>==?>=Xe><=N>>;S>=Y>>>;U>=YA=X^>=YC=Xb>>;Z=_>>=YO><QU>=YQ=?Y>=YS>=LP>>;c=?Y>>;e=Y\\><]=>=YX>><>>=LV=_b>=LX=`<><aN>><L>=VU>><N><\\<><CX=\\B=`R>><S>=V`><_A><RA>>?R=`==TV>><\\=\\e>><^>=]<>=[@=OD>><b>=]>=MT=WZ=O]=O==@;=AX=UQ>=TZ=OD>>=@>=AR>>=T>==L>=BW>=BV=T<>=UQ>=`]>>=B><LW>>=U>=^X>=<N=B@>>=Y>=^_>>=[>=Rc=ea><;?>=X<>=BS>>=a>=X=><<S><;d>>=O><VM><AC><be>=>d>>>?><UA>>>A><cc=YZ><@Q=eZ>>>M>=PY>=b>=R^><Bd><]\\>=e<=LB=BC>>>V>=?@=QC>=?C><A?>>>[>=@;>=C>><Nc>=ed=W[=De>=M<=_b=`_=aL=?_=[c><=P>=M]=@;=@O==S==T>>BO>>BO=>P=_D><e^>=L;><VD><Ca=>\\=DB=^<>=Le=Q?>=Dd=B@=?==D_=MO><_c>>BX=b;=BT=Na=D>=S\\>=]==_M=>b=La>=Z\\=VQ=YZ=N`=Nb=A[>=<b>=Ma=^?=>c>><c=@Q=XS>=L@=CU>=]]=Be>>;[=B@>=YO=VV=BL=DC=SV=R;=R=>=_e=BA=<a>=AS><`a>=@R><VL>>>@><AU=dO><;;><VL>=eB>=PU>=eB=LO>=dO>==<>=PY>=<^>=PY>=>^>=da=LO><C\\>=U?=RZ><=C>===>=BN><?S>=PN>=dQ><eR><AR=B^=M;><VB=LX><`A><[]=ZX><?_><b[>=e<=BW=BC><bL=MP=RZ><]b>=<_>=B_>=S;><AR>=c]>=PU>=ca>>DA><BQ><VB><B]><RV>=dR>>DN>>DS>=?T>=>`=YZ>=?S=B^=LX>>L`>=`Z=BW>>AC>>>C>=X^>>AT>>LY=L^>>LU=B^>>L;=`d=eX>>L<>>MC=BC=[a><?`=BC><?=>>AZ>=>d>=<]>==@><UA>>;S>=S>>==X><OP><<d><<S><RA>>@`><N]>=Rc>>MY>>=\\><>_><c;=dX><>Q>=UQ>>N=>=?`=TN>=Ne>==[><LW><?L><W`=db>=S=>>=\\>=A\\>=Zb>=Ba=_M><BT><W`><;L>>NO>=Tb>=Ba=RZ><W\\>=C<=B@><QS>>N]>=NQ>=S@>>AV=ad=]U>=[?=SL=be>>CM>=[b=a@>=M_=YZ=aC>=]d=Z`=O?=OA=Be>=Z_=@P><ZB=AM=ND>==S>=DT>=A>><cN>=W[>=^a><Cd>=N[>=dZ>>AM>>DB>=P@>=dD><?_><Cd>=eB>>O`>>DM><Aa>=B[><?_>=_@>=PY><Cd>>>R>>P<>=>P><CU>>O^=Q;>=>c>>Lc>>L[>=^M>>AO>=>c=e=>=O_><?=>=Rc>=RQ><=N>>AV>>Dc>=;`=Z>=cR=La>=MC>=ML>>BT><e`=Y@=>d=cB=?X=cD><^c=TT=QQ>=[=>>Ne><_\\>=CQ=XY><dS=V_=ZS><d;=O`><Y]=AM><[P><]c>==V><Cd>>MZ>>M]>>NC=SQ=Oa>=C;>=?`>=e[><CT>=Ra>=<M>=NT=e;>>N]>=O=>=>O><bO=LN>=Ra>=Ra>=cP>=XA>=bQ=U\\><YD>=W^><M[>>LM>==]=d^>=WX><OM>=RS=dM>>RR>>PM>=bA>>RU>>Q]>=<R>=Tc><RB=`Z>=<U=`Z>=VO><=D>=QX><b=>=Ae=Z<>>P^=cS>=MA>=M<>>Pc><VD=_M=RL=MO><LP><RU><]P><`a><`L>>RX>==L>>LN=eD>>@=>=PA=BA><P=>=B\\><CW><eX><[W><@N>>;Q><S`>=UC>>S<=NP>=CM>>Pa>>B]>=?a>>BU>>L=>>Q;=S?>>Q;=]a=Pc=C;><[e>>Q@=?]=@P>=Q?><@\\>==S>>QW><RV>>QY>=^W>>SU=dM><c?>>RB><Ce><Zc>>TR>>Qe>>AM><BP>>QY>>T`><=Q=LN=@L=dM>=N_>>TZ>=UA>>@P=BA>>S_>==R><C^>=DC>=AD>>Te>>L<>>@W>=C_>=;=>>=M>>@V>=cZ>>@X>=DM>==d>=WY>=@Q>=RR>>Na>=@U");
+	local e, n, l, d = 1, (Q and Q.bxor) or function(e, l)
+		local d, n = 1, 0;
+		while (e > 0) and (l > 0) do
+			local B, c = e % 2, l % 2;
+			if (B ~= c) then
+				n = n + d;
+			end
+			e, l, d = (e - B) / 2, (l - c) / 2, d * 2;
+		end
+		if (e < l) then
+			e = l;
+		end
+		while e > 0 do
+			local l = e % 2;
+			if (l > 0) then
+				n = n + d;
+			end
+			e, d = (e - l) / 2, d * 2;
+		end
+		return n;
+	end, 195, function(l, e, d)
+		if d then
+			local e = (l / (2 ^ (e - 1))) % (2 ^ (((d - 1) - (e - 1)) + 1));
+			return e - (e % 1);
+		else
+			local e = 2 ^ (e - 1);
+			return (((l % (e + e)) >= e) and 1) or 0;
+		end
+	end;
+	local l, O, a = function()
+		local d, B, c, a = A(o, e, e + 3);
+		d, B, c, a = n(d, l), n(B, l), n(c, l), n(a, l);
+		e = e + 4;
+		return (a * 16777216) + (c * 65536) + (B * 256) + d;
+	end, function()
+		local l = n(A(o, e, e), l);
+		e = e + 1;
+		return l;
+	end, function()
+		local d, B = A(o, e, e + 2);
+		d, B = n(d, l), n(B, l);
+		e = e + 2;
+		return (B * 256) + d;
+	end;
+	local function Q()
+		local e = l();
+		local l = l();
+		local B = 1;
+		local n = (d(l, 1, 20) * (2 ^ 32)) + e;
+		local e = d(l, 21, 31);
+		local l = -1 ^ d(l, 32);
+		if (e == 0) then
+			if (n == 0) then
+				return l * 0;
+			else
+				e = 1;
+				B = 0;
+			end
+		elseif (e == 2047) then
+			return ((n == 0) and (l * (1 / 0))) or (l * NaN);
+		end
+		return f(l, e - 1023) * (B + (n / (2 ^ 52)));
+	end
+	local e, n = l, function(d)
+		local c;
+		if not d then
+			d = l();
+			if (d == 0) then
+				return "";
+			end
+		end
+		c = B(o, e, (e + d) - 1);
+		e = e + d;
+		local l = {};
+		for e = 1, #c do
+			l[e] = L(n(A(B(c, e, e)), 195));
+		end
+		return C(l);
+	end;
+	local e, C = l, function(...)
+		return {...}, M("#", ...);
+	end;
+	local function _()
+		local o, A, e = {}, {}, {};
+		local L = {o,A,nil,e};
+		local e, B = l(), {};
+		for d = 1, e do
+			local l, e = O();
+			if (l == 1) then
+				e = O() ~= 0;
+			elseif (l == 2) then
+				e = Q();
+			elseif (l == 0) then
+				e = n();
+			end
+			B[d] = e;
+		end
+		L[3] = O();
+		for A = 1, l() do
+			local e = O();
+			if (d(e, 1, 1) == 0) then
+				local n, c, e = d(e, 2, 3), d(e, 4, 6), {a(),a(),nil,nil};
+				if (n == 0) then
+					e[3] = a();
+					e[4] = a();
+				elseif (n == 1) then
+					e[3] = l();
+				elseif (n == 2) then
+					e[3] = l() - (2 ^ 16);
+				elseif (n == 3) then
+					e[3] = l() - (2 ^ 16);
+					e[4] = a();
+				end
+				if (d(c, 1, 1) == 1) then
+					e[2] = B[e[2]];
+				end
+				if (d(c, 2, 2) == 1) then
+					e[3] = B[e[3]];
+				end
+				if (d(c, 3, 3) == 1) then
+					e[4] = B[e[4]];
+				end
+				o[A] = e;
+			end
+		end
+		for e = 1, l() do
+			A[e - 1] = _();
+		end
+		return L;
+	end
+	local function Q(e, A, a)
+		local l, e, d = e[1], e[2], e[3];
+		return function(...)
+			local n, C, B, L, l, o, _, f, M, O, d = l, e, d, C, 1, -1, {}, {...}, M("#", ...) - 1, {}, {};
+			for e = 0, M do
+				if (e >= B) then
+					_[e - B] = f[e + 1];
+				else
+					d[e] = f[e + 1];
+				end
+			end
+			local e = (M - B) + 1;
+			local e;
+			local B;
+			while true do
+				e = n[l];
+				B = e[1];
+				if (B <= 67) then
+					if (B <= 33) then
+						if (B <= 16) then
+							if (B <= 7) then
+								if (B <= 3) then
+									if (B <= 1) then
+										if (B > 0) then
+											local a;
+											local B;
+											d[e[2]] = e[3];
+											l = l + 1;
+											e = n[l];
+											B = e[2];
+											d[B] = d[B](c(d, B + 1, e[3]));
+											l = l + 1;
+											e = n[l];
+											d[e[2]] = {};
+											l = l + 1;
+											e = n[l];
+											d[e[2]] = e[3];
+											l = l + 1;
+											e = n[l];
+											d[e[2]] = e[3];
+											l = l + 1;
+											e = n[l];
+											d[e[2]] = e[3];
+											l = l + 1;
+											e = n[l];
+											d[e[2]] = e[3];
+											l = l + 1;
+											e = n[l];
+											B = e[2];
+											a = d[B];
+											for e = B + 1, e[3] do
+												t(a, d[e]);
+											end
+										else
+											local e = e[2];
+											d[e] = d[e]();
+										end
+									elseif (B == 2) then
+										local e = e[2];
+										d[e] = d[e]();
+									else
+										local a;
+										local B;
+										d[e[2]][e[3]] = d[e[4]];
+										l = l + 1;
+										e = n[l];
+										B = e[2];
+										d[B](c(d, B + 1, e[3]));
+										l = l + 1;
+										e = n[l];
+										d[e[2]] = d[e[3]][e[4]];
+										l = l + 1;
+										e = n[l];
+										B = e[2];
+										a = d[e[3]];
+										d[B + 1] = a;
+										d[B] = a[e[4]];
+										l = l + 1;
+										e = n[l];
+										d[e[2]] = {};
+										l = l + 1;
+										e = n[l];
+										d[e[2]][e[3]] = e[4];
+										l = l + 1;
+										e = n[l];
+										d[e[2]][e[3]] = e[4];
+										l = l + 1;
+										e = n[l];
+										d[e[2]][e[3]] = e[4];
+									end
+								elseif (B <= 5) then
+									if (B == 4) then
+										if (e[2] <= d[e[4]]) then
+											l = l + 1;
+										else
+											l = e[3];
+										end
+									elseif (d[e[2]] ~= d[e[4]]) then
+										l = l + 1;
+									else
+										l = e[3];
+									end
+								elseif (B == 6) then
+									d[e[2]] = e[3] ~= 0;
+									l = l + 1;
+								else
+									d[e[2]][e[3]] = d[e[4]];
+								end
+							elseif (B <= 11) then
+								if (B <= 9) then
+									if (B == 8) then
+										local B, B;
+										local A;
+										local O, Q;
+										local M;
+										local B;
+										d[e[2]] = e[3];
+										l = l + 1;
+										e = n[l];
+										B = e[2];
+										d[B] = d[B](c(d, B + 1, e[3]));
+										l = l + 1;
+										e = n[l];
+										for e = e[2], e[3] do
+											d[e] = nil;
+										end
+										l = l + 1;
+										e = n[l];
+										d[e[2]] = e[3];
+										l = l + 1;
+										e = n[l];
+										d[e[2]] = a[e[3]];
+										l = l + 1;
+										e = n[l];
+										d[e[2]] = a[e[3]];
+										l = l + 1;
+										e = n[l];
+										B = e[2];
+										M = d[e[3]];
+										d[B + 1] = M;
+										d[B] = M[e[4]];
+										l = l + 1;
+										e = n[l];
+										B = e[2];
+										O, Q = L(d[B](d[B + 1]));
+										o = (Q + B) - 1;
+										A = 0;
+										for e = B, o do
+											A = A + 1;
+											d[e] = O[A];
+										end
+										l = l + 1;
+										e = n[l];
+										B = e[2];
+										O, A = {d[B](c(d, B + 1, o))}, 0;
+										for e = B, e[4] do
+											A = A + 1;
+											d[e] = O[A];
+										end
+										l = l + 1;
+										e = n[l];
+										l = e[3];
+									else
+										local l = e[2];
+										d[l] = d[l](c(d, l + 1, e[3]));
+									end
+								elseif (B > 10) then
+									local B, B;
+									local Q;
+									local A;
+									local O, M;
+									local B;
+									B = e[2];
+									O, M = L(d[B](c(d, B + 1, e[3])));
+									o = (M + B) - 1;
+									A = 0;
+									for e = B, o do
+										A = A + 1;
+										d[e] = O[A];
+									end
+									l = l + 1;
+									e = n[l];
+									B = e[2];
+									d[B](c(d, B + 1, o));
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = a[e[3]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = a[e[3]];
+									l = l + 1;
+									e = n[l];
+									B = e[2];
+									Q = d[e[3]];
+									d[B + 1] = Q;
+									d[B] = Q[e[4]];
+									l = l + 1;
+									e = n[l];
+									B = e[2];
+									O, M = L(d[B](d[B + 1]));
+									o = (M + B) - 1;
+									A = 0;
+									for e = B, o do
+										A = A + 1;
+										d[e] = O[A];
+									end
+									l = l + 1;
+									e = n[l];
+									B = e[2];
+									O, A = {d[B](c(d, B + 1, o))}, 0;
+									for e = B, e[4] do
+										A = A + 1;
+										d[e] = O[A];
+									end
+									l = l + 1;
+									e = n[l];
+									l = e[3];
+								else
+									d[e[2]] = d[e[3]] + d[e[4]];
+								end
+							elseif (B <= 13) then
+								if (B == 12) then
+									if (d[e[2]] < d[e[4]]) then
+										l = l + 1;
+									else
+										l = e[3];
+									end
+								else
+									local a;
+									local B;
+									d[e[2]][e[3]] = d[e[4]];
+									l = l + 1;
+									e = n[l];
+									B = e[2];
+									d[B](c(d, B + 1, e[3]));
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = d[e[3]][e[4]];
+									l = l + 1;
+									e = n[l];
+									B = e[2];
+									a = d[e[3]];
+									d[B + 1] = a;
+									d[B] = a[e[4]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = {};
+									l = l + 1;
+									e = n[l];
+									d[e[2]][e[3]] = e[4];
+									l = l + 1;
+									e = n[l];
+									d[e[2]][e[3]] = e[4];
+								end
+							elseif (B <= 14) then
+								if (d[e[2]] ~= d[e[4]]) then
+									l = l + 1;
+								else
+									l = e[3];
+								end
+							elseif (B > 15) then
+								if (e[2] <= d[e[4]]) then
+									l = l + 1;
+								else
+									l = e[3];
+								end
+							else
+								local l = e[2];
+								local n = d[l];
+								for e = l + 1, e[3] do
+									t(n, d[e]);
+								end
+							end
+						elseif (B <= 24) then
+							if (B <= 20) then
+								if (B <= 18) then
+									if (B > 17) then
+										local e = e[2];
+										d[e] = d[e](c(d, e + 1, o));
+									else
+										local B;
+										local c;
+										A[e[3]] = d[e[2]];
+										l = l + 1;
+										e = n[l];
+										d[e[2]] = d[e[3]][e[4]];
+										l = l + 1;
+										e = n[l];
+										A[e[3]] = d[e[2]];
+										l = l + 1;
+										e = n[l];
+										d[e[2]] = A[e[3]];
+										l = l + 1;
+										e = n[l];
+										d[e[2]] = d[e[3]][e[4]];
+										l = l + 1;
+										e = n[l];
+										A[e[3]] = d[e[2]];
+										l = l + 1;
+										e = n[l];
+										d[e[2]] = d[e[3]][e[4]];
+										l = l + 1;
+										e = n[l];
+										c = e[2];
+										B = d[e[3]];
+										d[c + 1] = B;
+										d[c] = B[e[4]];
+									end
+								elseif (B == 19) then
+									local B = e[2];
+									local c = e[4];
+									local n = B + 2;
+									local B = {d[B](d[B + 1], d[n])};
+									for e = 1, c do
+										d[n + e] = B[e];
+									end
+									local B = B[1];
+									if B then
+										d[n] = B;
+										l = e[3];
+									else
+										l = l + 1;
+									end
+								elseif (d[e[2]] < d[e[4]]) then
+									l = l + 1;
+								else
+									l = e[3];
+								end
+							elseif (B <= 22) then
+								if (B > 21) then
+									local c = e[2];
+									local n = {};
+									for e = 1, #O do
+										local e = O[e];
+										for l = 0, #e do
+											local e = e[l];
+											local B = e[1];
+											local l = e[2];
+											if ((B == d) and (l >= c)) then
+												n[l] = B[l];
+												e[1] = n;
+											end
+										end
+									end
+								else
+									local B;
+									d[e[2]] = e[3];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = e[3];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = e[3];
+									l = l + 1;
+									e = n[l];
+									B = e[2];
+									d[B] = d[B](c(d, B + 1, e[3]));
+									l = l + 1;
+									e = n[l];
+									d[e[2]][e[3]] = d[e[4]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]][e[3]] = e[4];
+									l = l + 1;
+									e = n[l];
+									d[e[2]][e[3]] = e[4];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = a[e[3]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = d[e[3]][e[4]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = e[3];
+								end
+							elseif (B > 23) then
+								local o = C[e[3]];
+								local c;
+								local B = {};
+								c = D({}, {__index=function(l, e)
+									local e = B[e];
+									return e[1][e[2]];
+								end,__newindex=function(d, e, l)
+									local e = B[e];
+									e[1][e[2]] = l;
+								end});
+								for c = 1, e[4] do
+									l = l + 1;
+									local e = n[l];
+									if (e[1] == 38) then
+										B[c - 1] = {d,e[3]};
+									else
+										B[c - 1] = {A,e[3]};
+									end
+									O[#O + 1] = B;
+								end
+								d[e[2]] = Q(o, c, a);
+							else
+								d[e[2]][e[3]] = d[e[4]];
+							end
+						elseif (B <= 28) then
+							if (B <= 26) then
+								if (B > 25) then
+									local a;
+									local B;
+									B = e[2];
+									d[B](c(d, B + 1, e[3]));
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = d[e[3]][e[4]];
+									l = l + 1;
+									e = n[l];
+									B = e[2];
+									a = d[e[3]];
+									d[B + 1] = a;
+									d[B] = a[e[4]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = {};
+									l = l + 1;
+									e = n[l];
+									d[e[2]][e[3]] = e[4];
+									l = l + 1;
+									e = n[l];
+									B = e[2];
+									d[B](c(d, B + 1, e[3]));
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = d[e[3]][e[4]];
+									l = l + 1;
+									e = n[l];
+									B = e[2];
+									a = d[e[3]];
+									d[B + 1] = a;
+									d[B] = a[e[4]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = {};
+									l = l + 1;
+									e = n[l];
+									d[e[2]][e[3]] = e[4];
+								else
+									d[e[2]] = not d[e[3]];
+								end
+							elseif (B == 27) then
+								d[e[2]] = e[3] ~= 0;
+								l = l + 1;
+							elseif d[e[2]] then
+								l = l + 1;
+							else
+								l = e[3];
+							end
+						elseif (B <= 30) then
+							if (B == 29) then
+								local o;
+								local a;
+								local B;
+								d[e[2]] = A[e[3]];
+								l = l + 1;
+								e = n[l];
+								B = e[2];
+								a = d[e[3]];
+								d[B + 1] = a;
+								d[B] = a[e[4]];
+								l = l + 1;
+								e = n[l];
+								d[e[2]] = {};
+								l = l + 1;
+								e = n[l];
+								d[e[2]][e[3]] = e[4];
+								l = l + 1;
+								e = n[l];
+								d[e[2]] = e[3];
+								l = l + 1;
+								e = n[l];
+								d[e[2]] = d[e[3]];
+								l = l + 1;
+								e = n[l];
+								a = e[3];
+								o = d[a];
+								for e = a + 1, e[4] do
+									o = o .. d[e];
+								end
+								d[e[2]] = o;
+								l = l + 1;
+								e = n[l];
+								d[e[2]][e[3]] = d[e[4]];
+								l = l + 1;
+								e = n[l];
+								d[e[2]][e[3]] = e[4];
+								l = l + 1;
+								e = n[l];
+								d[e[2]][e[3]] = e[4];
+								l = l + 1;
+								e = n[l];
+								B = e[2];
+								d[B](c(d, B + 1, e[3]));
+							else
+								local e = e[2];
+								local n, l = L(d[e](d[e + 1]));
+								o = (l + e) - 1;
+								local l = 0;
+								for e = e, o do
+									l = l + 1;
+									d[e] = n[l];
+								end
+							end
+						elseif (B <= 31) then
+							d[e[2]] = d[e[3]] + d[e[4]];
+						elseif (B == 32) then
+							d[e[2]] = d[e[3]][e[4]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = a[e[3]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = d[e[3]][e[4]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = d[e[3]][e[4]];
+							l = l + 1;
+							e = n[l];
+							if (d[e[2]] == d[e[4]]) then
+								l = l + 1;
+							else
+								l = e[3];
+							end
+						else
+							local O;
+							local M, Q;
+							local A;
+							local B;
+							d[e[2]] = a[e[3]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = a[e[3]];
+							l = l + 1;
+							e = n[l];
+							B = e[2];
+							A = d[e[3]];
+							d[B + 1] = A;
+							d[B] = A[e[4]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = e[3];
+							l = l + 1;
+							e = n[l];
+							B = e[2];
+							M, Q = L(d[B](c(d, B + 1, e[3])));
+							o = (Q + B) - 1;
+							O = 0;
+							for e = B, o do
+								O = O + 1;
+								d[e] = M[O];
+							end
+							l = l + 1;
+							e = n[l];
+							B = e[2];
+							d[B] = d[B](c(d, B + 1, o));
+							l = l + 1;
+							e = n[l];
+							B = e[2];
+							d[B] = d[B]();
+							l = l + 1;
+							e = n[l];
+							B = e[2];
+							A = d[e[3]];
+							d[B + 1] = A;
+							d[B] = A[e[4]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = {};
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = e[3];
+						end
+					elseif (B <= 50) then
+						if (B <= 41) then
+							if (B <= 37) then
+								if (B <= 35) then
+									if (B > 34) then
+										local l = e[2];
+										d[l](c(d, l + 1, e[3]));
+									else
+										local o;
+										local B;
+										d[e[2]] = a[e[3]];
+										l = l + 1;
+										e = n[l];
+										d[e[2]] = e[3];
+										l = l + 1;
+										e = n[l];
+										B = e[2];
+										d[B](d[B + 1]);
+										l = l + 1;
+										e = n[l];
+										d[e[2]] = A[e[3]];
+										l = l + 1;
+										e = n[l];
+										B = e[2];
+										o = d[e[3]];
+										d[B + 1] = o;
+										d[B] = o[e[4]];
+										l = l + 1;
+										e = n[l];
+										d[e[2]] = {};
+										l = l + 1;
+										e = n[l];
+										d[e[2]][e[3]] = e[4];
+										l = l + 1;
+										e = n[l];
+										d[e[2]][e[3]] = e[4];
+										l = l + 1;
+										e = n[l];
+										d[e[2]][e[3]] = e[4];
+										l = l + 1;
+										e = n[l];
+										d[e[2]][e[3]] = e[4];
+										l = l + 1;
+										e = n[l];
+										B = e[2];
+										d[B](c(d, B + 1, e[3]));
+										l = l + 1;
+										e = n[l];
+										do
+											return;
+										end
+									end
+								elseif (B == 36) then
+									local B;
+									local c;
+									c = e[3];
+									B = d[c];
+									for e = c + 1, e[4] do
+										B = B .. d[e];
+									end
+									d[e[2]] = B;
+									l = l + 1;
+									e = n[l];
+									d[e[2]][e[3]] = d[e[4]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]][e[3]] = e[4];
+									l = l + 1;
+									e = n[l];
+									d[e[2]][e[3]] = e[4];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = e[3];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = a[e[3]];
+									l = l + 1;
+									e = n[l];
+									c = e[3];
+									B = d[c];
+									for e = c + 1, e[4] do
+										B = B .. d[e];
+									end
+									d[e[2]] = B;
+									l = l + 1;
+									e = n[l];
+									d[e[2]][e[3]] = d[e[4]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = a[e[3]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = d[e[3]][e[4]];
+								else
+									local a;
+									local B;
+									d[e[2]][e[3]] = d[e[4]];
+									l = l + 1;
+									e = n[l];
+									B = e[2];
+									d[B](c(d, B + 1, e[3]));
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = e[3];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = d[e[3]][e[4]];
+									l = l + 1;
+									e = n[l];
+									B = e[2];
+									a = d[e[3]];
+									d[B + 1] = a;
+									d[B] = a[e[4]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = {};
+									l = l + 1;
+									e = n[l];
+									d[e[2]][e[3]] = e[4];
+									l = l + 1;
+									e = n[l];
+									d[e[2]][e[3]] = e[4];
+									l = l + 1;
+									e = n[l];
+									d[e[2]][e[3]] = e[4];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = {};
+								end
+							elseif (B <= 39) then
+								if (B == 38) then
+									d[e[2]] = d[e[3]];
+								else
+									l = e[3];
+								end
+							elseif (B > 40) then
+								local l = e[2];
+								d[l](c(d, l + 1, e[3]));
+							else
+								local n = e[2];
+								local l = d[e[3]];
+								d[n + 1] = l;
+								d[n] = l[e[4]];
+							end
+						elseif (B <= 45) then
+							if (B <= 43) then
+								if (B > 42) then
+									local a;
+									local B;
+									d[e[2]][e[3]] = d[e[4]];
+									l = l + 1;
+									e = n[l];
+									B = e[2];
+									d[B](c(d, B + 1, e[3]));
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = d[e[3]][e[4]];
+									l = l + 1;
+									e = n[l];
+									B = e[2];
+									a = d[e[3]];
+									d[B + 1] = a;
+									d[B] = a[e[4]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = {};
+									l = l + 1;
+									e = n[l];
+									d[e[2]][e[3]] = e[4];
+									l = l + 1;
+									e = n[l];
+									B = e[2];
+									d[B](c(d, B + 1, e[3]));
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = e[3];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = d[e[3]][e[4]];
+									l = l + 1;
+									e = n[l];
+									B = e[2];
+									a = d[e[3]];
+									d[B + 1] = a;
+									d[B] = a[e[4]];
+								else
+									local c = e[2];
+									local B = {};
+									for e = 1, #O do
+										local e = O[e];
+										for l = 0, #e do
+											local l = e[l];
+											local n = l[1];
+											local e = l[2];
+											if ((n == d) and (e >= c)) then
+												B[e] = n[e];
+												l[1] = B;
+											end
+										end
+									end
+								end
+							elseif (B == 44) then
+								local o;
+								local B;
+								d[e[2]] = a[e[3]];
+								l = l + 1;
+								e = n[l];
+								d[e[2]] = d[e[3]][e[4]];
+								l = l + 1;
+								e = n[l];
+								d[e[2]] = e[3];
+								l = l + 1;
+								e = n[l];
+								B = e[2];
+								d[B](d[B + 1]);
+								l = l + 1;
+								e = n[l];
+								B = e[2];
+								o = d[e[3]];
+								d[B + 1] = o;
+								d[B] = o[e[4]];
+								l = l + 1;
+								e = n[l];
+								d[e[2]] = e[3];
+								l = l + 1;
+								e = n[l];
+								B = e[2];
+								d[B] = d[B](c(d, B + 1, e[3]));
+								l = l + 1;
+								e = n[l];
+								d[e[2]] = A[e[3]];
+								l = l + 1;
+								e = n[l];
+								if not d[e[2]] then
+									l = l + 1;
+								else
+									l = e[3];
+								end
+							else
+								do
+									return d[e[2]];
+								end
+							end
+						elseif (B <= 47) then
+							if (B == 46) then
+								local l = e[2];
+								d[l] = d[l](c(d, l + 1, e[3]));
+							else
+								local o = C[e[3]];
+								local c;
+								local B = {};
+								c = D({}, {__index=function(l, e)
+									local e = B[e];
+									return e[1][e[2]];
+								end,__newindex=function(d, e, l)
+									local e = B[e];
+									e[1][e[2]] = l;
+								end});
+								for c = 1, e[4] do
+									l = l + 1;
+									local e = n[l];
+									if (e[1] == 38) then
+										B[c - 1] = {d,e[3]};
+									else
+										B[c - 1] = {A,e[3]};
+									end
+									O[#O + 1] = B;
+								end
+								d[e[2]] = Q(o, c, a);
+							end
+						elseif (B <= 48) then
+							if (d[e[2]] == d[e[4]]) then
+								l = l + 1;
+							else
+								l = e[3];
+							end
+						elseif (B == 49) then
+							local a;
+							local B;
+							A[e[3]] = d[e[2]];
+							l = l + 1;
+							e = n[l];
+							B = e[2];
+							a = d[e[3]];
+							d[B + 1] = a;
+							d[B] = a[e[4]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = e[3];
+							l = l + 1;
+							e = n[l];
+							B = e[2];
+							d[B] = d[B](c(d, B + 1, e[3]));
+							l = l + 1;
+							e = n[l];
+							A[e[3]] = d[e[2]];
+							l = l + 1;
+							e = n[l];
+							do
+								return;
+							end
+						elseif (d[e[2]] <= e[4]) then
+							l = e[3];
+						else
+							l = l + 1;
+						end
+					elseif (B <= 58) then
+						if (B <= 54) then
+							if (B <= 52) then
+								if (B > 51) then
+									local B;
+									d[e[2]] = d[e[3]][e[4]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = A[e[3]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = d[e[3]] - d[e[4]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = A[e[3]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = a[e[3]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = d[e[3]][e[4]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = A[e[3]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = d[e[3]][e[4]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = d[e[3]][e[4]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = A[e[3]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = d[e[3]][e[4]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = d[e[3]][e[4]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = d[e[3]][e[4]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = d[e[3]] + d[e[4]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = A[e[3]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = d[e[3]][e[4]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = d[e[3]][e[4]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = A[e[3]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = d[e[3]][e[4]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = d[e[3]][e[4]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = d[e[3]][e[4]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = d[e[3]] + d[e[4]];
+									l = l + 1;
+									e = n[l];
+									B = e[2];
+									d[B] = d[B](c(d, B + 1, e[3]));
+									l = l + 1;
+									e = n[l];
+									d[e[2]][e[3]] = d[e[4]];
+									l = l + 1;
+									e = n[l];
+									do
+										return;
+									end
+								elseif (e[2] < d[e[4]]) then
+									l = e[3];
+								else
+									l = l + 1;
+								end
+							elseif (B == 53) then
+								local L, c;
+								local o;
+								local B;
+								B = e[2];
+								o = d[e[3]];
+								d[B + 1] = o;
+								d[B] = o[e[4]];
+								l = l + 1;
+								e = n[l];
+								B = e[2];
+								d[B] = d[B](d[B + 1]);
+								l = l + 1;
+								e = n[l];
+								d[e[2]] = a[e[3]];
+								l = l + 1;
+								e = n[l];
+								d[e[2]] = A[e[3]];
+								l = l + 1;
+								e = n[l];
+								B = e[2];
+								L, c = {d[B](d[B + 1])}, 0;
+								for e = B, e[4] do
+									c = c + 1;
+									d[e] = L[c];
+								end
+								l = l + 1;
+								e = n[l];
+								l = e[3];
+							else
+								d[e[2]] = a[e[3]];
+							end
+						elseif (B <= 56) then
+							if (B > 55) then
+								local e = e[2];
+								local n, l = L(d[e](d[e + 1]));
+								o = (l + e) - 1;
+								local l = 0;
+								for e = e, o do
+									l = l + 1;
+									d[e] = n[l];
+								end
+							else
+								local o;
+								local B;
+								local a;
+								d[e[2]] = A[e[3]];
+								l = l + 1;
+								e = n[l];
+								a = e[2];
+								B = d[e[3]];
+								d[a + 1] = B;
+								d[a] = B[e[4]];
+								l = l + 1;
+								e = n[l];
+								d[e[2]] = {};
+								l = l + 1;
+								e = n[l];
+								d[e[2]][e[3]] = e[4];
+								l = l + 1;
+								e = n[l];
+								d[e[2]] = e[3];
+								l = l + 1;
+								e = n[l];
+								d[e[2]] = d[e[3]];
+								l = l + 1;
+								e = n[l];
+								B = e[3];
+								o = d[B];
+								for e = B + 1, e[4] do
+									o = o .. d[e];
+								end
+								d[e[2]] = o;
+								l = l + 1;
+								e = n[l];
+								d[e[2]][e[3]] = d[e[4]];
+								l = l + 1;
+								e = n[l];
+								d[e[2]][e[3]] = e[4];
+								l = l + 1;
+								e = n[l];
+								d[e[2]][e[3]] = e[4];
+								l = l + 1;
+								e = n[l];
+								a = e[2];
+								d[a](c(d, a + 1, e[3]));
+							end
+						elseif (B > 57) then
+							d[e[2]] = d[e[3]][e[4]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = a[e[3]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = d[e[3]][e[4]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = d[e[3]][e[4]];
+							l = l + 1;
+							e = n[l];
+							if (d[e[2]] ~= d[e[4]]) then
+								l = l + 1;
+							else
+								l = e[3];
+							end
+						else
+							local a;
+							local B;
+							d[e[2]][e[3]] = e[4];
+							l = l + 1;
+							e = n[l];
+							B = e[2];
+							d[B] = d[B](c(d, B + 1, e[3]));
+							l = l + 1;
+							e = n[l];
+							d[e[2]][e[3]] = d[e[4]];
+							l = l + 1;
+							e = n[l];
+							B = e[2];
+							a = d[e[3]];
+							d[B + 1] = a;
+							d[B] = a[e[4]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = {};
+							l = l + 1;
+							e = n[l];
+							d[e[2]][e[3]] = e[4];
+							l = l + 1;
+							e = n[l];
+							d[e[2]][e[3]] = e[4];
+							l = l + 1;
+							e = n[l];
+							B = e[2];
+							d[B] = d[B](c(d, B + 1, e[3]));
+							l = l + 1;
+							e = n[l];
+							d[e[2]][e[3]] = d[e[4]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = d[e[3]][e[4]];
+						end
+					elseif (B <= 62) then
+						if (B <= 60) then
+							if (B == 59) then
+								for e = e[2], e[3] do
+									d[e] = nil;
+								end
+							elseif (e[2] <= d[e[4]]) then
+								l = e[3];
+							else
+								l = l + 1;
+							end
+						elseif (B == 61) then
+							d[e[2]] = e[3] ~= 0;
+						else
+							d[e[2]] = A[e[3]];
+						end
+					elseif (B <= 64) then
+						if (B == 63) then
+							d[e[2]] = d[e[3]];
+						elseif (e[2] <= d[e[4]]) then
+							l = e[3];
+						else
+							l = l + 1;
+						end
+					elseif (B <= 65) then
+						d[e[2]] = a[e[3]];
+					elseif (B > 66) then
+						d[e[2]] = e[3];
+					else
+						local e = e[2];
+						d[e](c(d, e + 1, o));
+					end
+				elseif (B <= 101) then
+					if (B <= 84) then
+						if (B <= 75) then
+							if (B <= 71) then
+								if (B <= 69) then
+									if (B == 68) then
+										if (e[2] < d[e[4]]) then
+											l = e[3];
+										else
+											l = l + 1;
+										end
+									else
+										local n = e[2];
+										local l = d[e[3]];
+										d[n + 1] = l;
+										d[n] = l[e[4]];
+									end
+								elseif (B > 70) then
+									l = e[3];
+								else
+									local o;
+									local B;
+									d[e[2]] = d[e[3]][e[4]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = d[e[3]] * e[4];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = d[e[3]][e[4]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = d[e[3]][e[4]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = d[e[3]] * e[4];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = d[e[3]] + d[e[4]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = a[e[3]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = d[e[3]][e[4]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = e[3];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = e[3];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = e[3];
+									l = l + 1;
+									e = n[l];
+									B = e[2];
+									d[B] = d[B](c(d, B + 1, e[3]));
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = d[e[3]] + d[e[4]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = a[e[3]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = d[e[3]][e[4]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = d[e[3]][e[4]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = d[e[3]] + d[e[4]];
+									l = l + 1;
+									e = n[l];
+									B = e[2];
+									d[B] = d[B](d[B + 1]);
+									l = l + 1;
+									e = n[l];
+									d[e[2]][e[3]] = d[e[4]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = A[e[3]];
+									l = l + 1;
+									e = n[l];
+									B = e[2];
+									o = d[e[3]];
+									d[B + 1] = o;
+									d[B] = o[e[4]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = {};
+									l = l + 1;
+									e = n[l];
+									d[e[2]][e[3]] = e[4];
+									l = l + 1;
+									e = n[l];
+									d[e[2]][e[3]] = e[4];
+									l = l + 1;
+									e = n[l];
+									d[e[2]][e[3]] = e[4];
+									l = l + 1;
+									e = n[l];
+									d[e[2]][e[3]] = e[4];
+									l = l + 1;
+									e = n[l];
+									B = e[2];
+									d[B](c(d, B + 1, e[3]));
+									l = l + 1;
+									e = n[l];
+									l = e[3];
+								end
+							elseif (B <= 73) then
+								if (B > 72) then
+									local a;
+									local B;
+									d[e[2]] = {};
+									l = l + 1;
+									e = n[l];
+									d[e[2]][e[3]] = e[4];
+									l = l + 1;
+									e = n[l];
+									B = e[2];
+									d[B](c(d, B + 1, e[3]));
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = d[e[3]][e[4]];
+									l = l + 1;
+									e = n[l];
+									B = e[2];
+									a = d[e[3]];
+									d[B + 1] = a;
+									d[B] = a[e[4]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = {};
+									l = l + 1;
+									e = n[l];
+									d[e[2]][e[3]] = e[4];
+									l = l + 1;
+									e = n[l];
+									d[e[2]][e[3]] = e[4];
+									l = l + 1;
+									e = n[l];
+									d[e[2]][e[3]] = e[4];
+									l = l + 1;
+									e = n[l];
+									d[e[2]][e[3]] = e[4];
+								else
+									d[e[2]] = d[e[3]] * e[4];
+								end
+							elseif (B > 74) then
+								local l = e[2];
+								local n = d[l];
+								for e = l + 1, e[3] do
+									t(n, d[e]);
+								end
+							else
+								local n = e[2];
+								local c = e[4];
+								local B = n + 2;
+								local n = {d[n](d[n + 1], d[B])};
+								for e = 1, c do
+									d[B + e] = n[e];
+								end
+								local n = n[1];
+								if n then
+									d[B] = n;
+									l = e[3];
+								else
+									l = l + 1;
+								end
+							end
+						elseif (B <= 79) then
+							if (B <= 77) then
+								if (B > 76) then
+									local B;
+									d[e[2]] = e[3];
+									l = l + 1;
+									e = n[l];
+									B = e[2];
+									d[B] = d[B](c(d, B + 1, e[3]));
+									l = l + 1;
+									e = n[l];
+									d[e[2]][e[3]] = d[e[4]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]][e[3]] = e[4];
+									l = l + 1;
+									e = n[l];
+									d[e[2]][e[3]] = e[4];
+									l = l + 1;
+									e = n[l];
+									d[e[2]][e[3]] = e[4];
+									l = l + 1;
+									e = n[l];
+									d[e[2]][e[3]] = e[4];
+									l = l + 1;
+									e = n[l];
+									d[e[2]][e[3]] = e[4];
+									l = l + 1;
+									e = n[l];
+									d[e[2]][e[3]] = e[4];
+									l = l + 1;
+									e = n[l];
+									d[e[2]][e[3]] = e[4];
+								else
+									local e = e[2];
+									d[e](c(d, e + 1, o));
+								end
+							elseif (B == 78) then
+								local n = e[2];
+								local B, l = {d[n](c(d, n + 1, o))}, 0;
+								for e = n, e[4] do
+									l = l + 1;
+									d[e] = B[l];
+								end
+							else
+								d[e[2]][e[3]] = e[4];
+								l = l + 1;
+								e = n[l];
+								d[e[2]][e[3]] = e[4];
+								l = l + 1;
+								e = n[l];
+								d[e[2]][e[3]] = e[4];
+								l = l + 1;
+								e = n[l];
+								d[e[2]] = {};
+								l = l + 1;
+								e = n[l];
+								d[e[2]][e[3]] = e[4];
+								l = l + 1;
+								e = n[l];
+								d[e[2]][e[3]] = e[4];
+								l = l + 1;
+								e = n[l];
+								d[e[2]][e[3]] = e[4];
+								l = l + 1;
+								e = n[l];
+								d[e[2]][e[3]] = d[e[4]];
+							end
+						elseif (B <= 81) then
+							if (B == 80) then
+								local l = e[2];
+								local n, e = L(d[l](c(d, l + 1, e[3])));
+								o = (e + l) - 1;
+								local e = 0;
+								for l = l, o do
+									e = e + 1;
+									d[l] = n[e];
+								end
+							else
+								d[e[2]] = d[e[3]] - d[e[4]];
+							end
+						elseif (B <= 82) then
+							if (d[e[2]] <= e[4]) then
+								l = e[3];
+							else
+								l = l + 1;
+							end
+						elseif (B == 83) then
+							local n = e[3];
+							local l = d[n];
+							for e = n + 1, e[4] do
+								l = l .. d[e];
+							end
+							d[e[2]] = l;
+						else
+							local A;
+							local B;
+							d[e[2]][e[3]] = d[e[4]];
+							l = l + 1;
+							e = n[l];
+							B = e[2];
+							d[B](c(d, B + 1, e[3]));
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = a[e[3]];
+							l = l + 1;
+							e = n[l];
+							B = e[2];
+							A = d[e[3]];
+							d[B + 1] = A;
+							d[B] = A[e[4]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = e[3];
+							l = l + 1;
+							e = n[l];
+							B = e[2];
+							d[B] = d[B](c(d, B + 1, e[3]));
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = a[e[3]];
+							l = l + 1;
+							e = n[l];
+							B = e[2];
+							A = d[e[3]];
+							d[B + 1] = A;
+							d[B] = A[e[4]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = e[3];
+							l = l + 1;
+							e = n[l];
+							B = e[2];
+							d[B] = d[B](c(d, B + 1, e[3]));
+						end
+					elseif (B <= 92) then
+						if (B <= 88) then
+							if (B <= 86) then
+								if (B == 85) then
+									d[e[2]] = {};
+								else
+									local l = e[2];
+									local B, n = {d[l](d[l + 1])}, 0;
+									for e = l, e[4] do
+										n = n + 1;
+										d[e] = B[n];
+									end
+								end
+							elseif (B == 87) then
+								local A;
+								local B;
+								d[e[2]] = a[e[3]];
+								l = l + 1;
+								e = n[l];
+								d[e[2]] = d[e[3]][e[4]];
+								l = l + 1;
+								e = n[l];
+								d[e[2]] = e[3];
+								l = l + 1;
+								e = n[l];
+								d[e[2]] = e[3];
+								l = l + 1;
+								e = n[l];
+								B = e[2];
+								d[B] = d[B](c(d, B + 1, e[3]));
+								l = l + 1;
+								e = n[l];
+								d[e[2]][e[3]] = d[e[4]];
+								l = l + 1;
+								e = n[l];
+								d[e[2]][e[3]] = d[e[4]];
+								l = l + 1;
+								e = n[l];
+								d[e[2]] = e[3] ~= 0;
+								l = l + 1;
+								e = n[l];
+								d[e[2]] = d[e[3]][e[4]];
+								l = l + 1;
+								e = n[l];
+								B = e[2];
+								A = d[e[3]];
+								d[B + 1] = A;
+								d[B] = A[e[4]];
+							else
+								local a;
+								local B;
+								d[e[2]] = A[e[3]];
+								l = l + 1;
+								e = n[l];
+								B = e[2];
+								a = d[e[3]];
+								d[B + 1] = a;
+								d[B] = a[e[4]];
+								l = l + 1;
+								e = n[l];
+								d[e[2]] = {};
+								l = l + 1;
+								e = n[l];
+								d[e[2]][e[3]] = e[4];
+								l = l + 1;
+								e = n[l];
+								d[e[2]][e[3]] = e[4];
+								l = l + 1;
+								e = n[l];
+								d[e[2]][e[3]] = e[4];
+								l = l + 1;
+								e = n[l];
+								d[e[2]][e[3]] = e[4];
+								l = l + 1;
+								e = n[l];
+								B = e[2];
+								d[B](c(d, B + 1, e[3]));
+								l = l + 1;
+								e = n[l];
+								do
+									return;
+								end
+							end
+						elseif (B <= 90) then
+							if (B > 89) then
+								local e = e[2];
+								d[e] = d[e](c(d, e + 1, o));
+							else
+								do
+									return;
+								end
+							end
+						elseif (B == 91) then
+							A[e[3]] = d[e[2]];
+						else
+							d[e[2]] = d[e[3]] * e[4];
+						end
+					elseif (B <= 96) then
+						if (B <= 94) then
+							if (B == 93) then
+								local A;
+								local B;
+								B = e[2];
+								A = d[e[3]];
+								d[B + 1] = A;
+								d[B] = A[e[4]];
+								l = l + 1;
+								e = n[l];
+								d[e[2]] = {};
+								l = l + 1;
+								e = n[l];
+								d[e[2]][e[3]] = e[4];
+								l = l + 1;
+								e = n[l];
+								B = e[2];
+								d[B](c(d, B + 1, e[3]));
+								l = l + 1;
+								e = n[l];
+								d[e[2]] = a[e[3]];
+								l = l + 1;
+								e = n[l];
+								d[e[2]] = d[e[3]][e[4]];
+								l = l + 1;
+								e = n[l];
+								d[e[2]] = e[3];
+							else
+								d[e[2]][e[3]] = e[4];
+							end
+						elseif (B > 95) then
+							d[e[2]] = A[e[3]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = d[e[3]][e[4]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = a[e[3]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = d[e[3]][e[4]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = d[e[3]][e[4]];
+							l = l + 1;
+							e = n[l];
+							if (d[e[2]] ~= d[e[4]]) then
+								l = l + 1;
+							else
+								l = e[3];
+							end
+						else
+							local B;
+							d[e[2]] = a[e[3]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = d[e[3]][e[4]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = d[e[3]][e[4]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = e[3];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = d[e[3]][e[4]];
+							l = l + 1;
+							e = n[l];
+							B = e[2];
+							d[B] = d[B](c(d, B + 1, e[3]));
+							l = l + 1;
+							e = n[l];
+							d[e[2]][e[3]] = d[e[4]];
+						end
+					elseif (B <= 98) then
+						if (B == 97) then
+							d[e[2]][e[3]] = e[4];
+						elseif not d[e[2]] then
+							l = l + 1;
+						else
+							l = e[3];
+						end
+					elseif (B <= 99) then
+						d[e[2]] = A[e[3]];
+					elseif (B == 100) then
+						local e = e[2];
+						d[e](d[e + 1]);
+					else
+						d[e[2]] = e[3] ~= 0;
+					end
+				elseif (B <= 118) then
+					if (B <= 109) then
+						if (B <= 105) then
+							if (B <= 103) then
+								if (B == 102) then
+									local A;
+									local B;
+									B = e[2];
+									d[B](c(d, B + 1, e[3]));
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = a[e[3]];
+									l = l + 1;
+									e = n[l];
+									B = e[2];
+									A = d[e[3]];
+									d[B + 1] = A;
+									d[B] = A[e[4]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = e[3];
+									l = l + 1;
+									e = n[l];
+									B = e[2];
+									d[B] = d[B](c(d, B + 1, e[3]));
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = d[e[3]][e[4]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = d[e[3]][e[4]];
+									l = l + 1;
+									e = n[l];
+									if d[e[2]] then
+										l = l + 1;
+									else
+										l = e[3];
+									end
+								else
+									local A;
+									local B;
+									d[e[2]] = {};
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = e[3] ~= 0;
+									l = l + 1;
+									e = n[l];
+									for e = e[2], e[3] do
+										d[e] = nil;
+									end
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = a[e[3]];
+									l = l + 1;
+									e = n[l];
+									B = e[2];
+									A = d[e[3]];
+									d[B + 1] = A;
+									d[B] = A[e[4]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = e[3];
+									l = l + 1;
+									e = n[l];
+									B = e[2];
+									d[B] = d[B](c(d, B + 1, e[3]));
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = a[e[3]];
+									l = l + 1;
+									e = n[l];
+									B = e[2];
+									A = d[e[3]];
+									d[B + 1] = A;
+									d[B] = A[e[4]];
+									l = l + 1;
+									e = n[l];
+									d[e[2]] = e[3];
+								end
+							elseif (B == 104) then
+								do
+									return d[e[2]];
+								end
+							else
+								local l = e[2];
+								local B, n = {d[l](c(d, l + 1, o))}, 0;
+								for e = l, e[4] do
+									n = n + 1;
+									d[e] = B[n];
+								end
+							end
+						elseif (B <= 107) then
+							if (B > 106) then
+								if d[e[2]] then
+									l = l + 1;
+								else
+									l = e[3];
+								end
+							else
+								d[e[2]] = d[e[3]][e[4]];
+							end
+						elseif (B > 108) then
+							d[e[2]] = d[e[3]] - d[e[4]];
+						else
+							d[e[2]] = {};
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = {};
+							l = l + 1;
+							e = n[l];
+							d[e[2]][e[3]] = e[4];
+							l = l + 1;
+							e = n[l];
+							d[e[2]][e[3]] = e[4];
+							l = l + 1;
+							e = n[l];
+							d[e[2]][e[3]] = e[4];
+						end
+					elseif (B <= 113) then
+						if (B <= 111) then
+							if (B == 110) then
+								local o;
+								local B;
+								B = e[2];
+								d[B](c(d, B + 1, e[3]));
+								l = l + 1;
+								e = n[l];
+								d[e[2]] = a[e[3]];
+								l = l + 1;
+								e = n[l];
+								d[e[2]] = d[e[3]][e[4]];
+								l = l + 1;
+								e = n[l];
+								d[e[2]] = A[e[3]];
+								l = l + 1;
+								e = n[l];
+								d[e[2]] = A[e[3]];
+								l = l + 1;
+								e = n[l];
+								B = e[2];
+								o = d[e[3]];
+								d[B + 1] = o;
+								d[B] = o[e[4]];
+								l = l + 1;
+								e = n[l];
+								d[e[2]] = e[3];
+								l = l + 1;
+								e = n[l];
+								B = e[2];
+								d[B] = d[B](c(d, B + 1, e[3]));
+								l = l + 1;
+								e = n[l];
+								B = e[2];
+								o = d[e[3]];
+								d[B + 1] = o;
+								d[B] = o[e[4]];
+							else
+								local a;
+								local B;
+								B = e[2];
+								d[B](c(d, B + 1, e[3]));
+								l = l + 1;
+								e = n[l];
+								d[e[2]] = {};
+								l = l + 1;
+								e = n[l];
+								B = e[2];
+								a = d[e[3]];
+								d[B + 1] = a;
+								d[B] = a[e[4]];
+								l = l + 1;
+								e = n[l];
+								d[e[2]] = {};
+								l = l + 1;
+								e = n[l];
+								d[e[2]][e[3]] = e[4];
+								l = l + 1;
+								e = n[l];
+								d[e[2]][e[3]] = e[4];
+								l = l + 1;
+								e = n[l];
+								B = e[2];
+								d[B] = d[B](c(d, B + 1, e[3]));
+								l = l + 1;
+								e = n[l];
+								d[e[2]][e[3]] = d[e[4]];
+								l = l + 1;
+								e = n[l];
+								B = e[2];
+								a = d[e[3]];
+								d[B + 1] = a;
+								d[B] = a[e[4]];
+								l = l + 1;
+								e = n[l];
+								d[e[2]] = {};
+							end
+						elseif (B == 112) then
+							do
+								return;
+							end
+						else
+							d[e[2]] = not d[e[3]];
+						end
+					elseif (B <= 115) then
+						if (B == 114) then
+							local a;
+							local B;
+							B = e[2];
+							d[B](c(d, B + 1, e[3]));
+							l = l + 1;
+							e = n[l];
+							B = e[2];
+							a = d[e[3]];
+							d[B + 1] = a;
+							d[B] = a[e[4]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = e[3];
+							l = l + 1;
+							e = n[l];
+							B = e[2];
+							d[B](c(d, B + 1, e[3]));
+							l = l + 1;
+							e = n[l];
+							do
+								return;
+							end
+						else
+							local c;
+							local B;
+							A[e[3]] = d[e[2]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = A[e[3]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = d[e[3]];
+							l = l + 1;
+							e = n[l];
+							B = e[2];
+							d[B](d[B + 1]);
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = A[e[3]];
+							l = l + 1;
+							e = n[l];
+							B = e[2];
+							c = d[e[3]];
+							d[B + 1] = c;
+							d[B] = c[e[4]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = {};
+							l = l + 1;
+							e = n[l];
+							d[e[2]][e[3]] = e[4];
+							l = l + 1;
+							e = n[l];
+							if d[e[2]] then
+								l = l + 1;
+							else
+								l = e[3];
+							end
+						end
+					elseif (B <= 116) then
+						local B;
+						B = e[2];
+						d[B] = d[B](c(d, B + 1, e[3]));
+						l = l + 1;
+						e = n[l];
+						d[e[2]] = a[e[3]];
+						l = l + 1;
+						e = n[l];
+						d[e[2]] = d[e[3]][e[4]];
+						l = l + 1;
+						e = n[l];
+						d[e[2]] = A[e[3]];
+						l = l + 1;
+						e = n[l];
+						d[e[2]] = d[e[3]];
+						l = l + 1;
+						e = n[l];
+						B = e[2];
+						d[B](c(d, B + 1, e[3]));
+						l = l + 1;
+						e = n[l];
+						d[e[2]][e[3]] = e[4];
+						l = l + 1;
+						e = n[l];
+						d[e[2]][e[3]] = e[4];
+						l = l + 1;
+						e = n[l];
+						d[e[2]] = a[e[3]];
+						l = l + 1;
+						e = n[l];
+						d[e[2]] = d[e[3]][e[4]];
+						l = l + 1;
+						e = n[l];
+						d[e[2]] = d[e[3]][e[4]];
+						l = l + 1;
+						e = n[l];
+						d[e[2]][e[3]] = d[e[4]];
+					elseif (B > 117) then
+						if not d[e[2]] then
+							l = l + 1;
+						else
+							l = e[3];
+						end
+					else
+						local e = e[2];
+						d[e](d[e + 1]);
+					end
+				elseif (B <= 126) then
+					if (B <= 122) then
+						if (B <= 120) then
+							if (B == 119) then
+								local B;
+								B = e[2];
+								d[B] = d[B](d[B + 1]);
+								l = l + 1;
+								e = n[l];
+								d[e[2]] = a[e[3]];
+								l = l + 1;
+								e = n[l];
+								d[e[2]] = d[e[3]][e[4]];
+								l = l + 1;
+								e = n[l];
+								d[e[2]] = d[e[3]][e[4]];
+								l = l + 1;
+								e = n[l];
+								if (d[e[2]] ~= d[e[4]]) then
+									l = l + 1;
+								else
+									l = e[3];
+								end
+							else
+								local n = e[3];
+								local l = d[n];
+								for e = n + 1, e[4] do
+									l = l .. d[e];
+								end
+								d[e[2]] = l;
+							end
+						elseif (B == 121) then
+							local B;
+							d[e[2]] = d[e[3]][e[4]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = e[3];
+							l = l + 1;
+							e = n[l];
+							B = e[2];
+							d[B] = d[B](d[B + 1]);
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = a[e[3]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = d[e[3]][e[4]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]][e[3]] = d[e[4]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = a[e[3]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = d[e[3]][e[4]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = e[3];
+							l = l + 1;
+							e = n[l];
+							B = e[2];
+							d[B] = d[B](d[B + 1]);
+						else
+							local e = e[2];
+							d[e] = d[e](d[e + 1]);
+						end
+					elseif (B <= 124) then
+						if (B == 123) then
+							local l = e[2];
+							local n, e = L(d[l](c(d, l + 1, e[3])));
+							o = (e + l) - 1;
+							local e = 0;
+							for l = l, o do
+								e = e + 1;
+								d[l] = n[e];
+							end
+						else
+							local e = e[2];
+							d[e] = d[e](d[e + 1]);
+						end
+					elseif (B == 125) then
+						if (d[e[2]] == d[e[4]]) then
+							l = l + 1;
+						else
+							l = e[3];
+						end
+					else
+						A[e[3]] = d[e[2]];
+					end
+				elseif (B <= 130) then
+					if (B <= 128) then
+						if (B > 127) then
+							local o;
+							local B;
+							d[e[2]] = A[e[3]];
+							l = l + 1;
+							e = n[l];
+							B = e[2];
+							o = d[e[3]];
+							d[B + 1] = o;
+							d[B] = o[e[4]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = A[e[3]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = a[e[3]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = d[e[3]][e[4]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = e[3];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = a[e[3]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = d[e[3]][e[4]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = d[e[3]][e[4]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = a[e[3]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = d[e[3]][e[4]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = d[e[3]][e[4]];
+							l = l + 1;
+							e = n[l];
+							B = e[2];
+							d[B] = d[B](c(d, B + 1, e[3]));
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = {};
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = a[e[3]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = d[e[3]][e[4]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = e[3];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = e[3];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = e[3];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = e[3];
+							l = l + 1;
+							e = n[l];
+							B = e[2];
+							d[B] = d[B](c(d, B + 1, e[3]));
+							l = l + 1;
+							e = n[l];
+							d[e[2]][e[3]] = d[e[4]];
+							l = l + 1;
+							e = n[l];
+							B = e[2];
+							d[B] = d[B](c(d, B + 1, e[3]));
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = A[e[3]];
+							l = l + 1;
+							e = n[l];
+							B = e[2];
+							o = d[e[3]];
+							d[B + 1] = o;
+							d[B] = o[e[4]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = A[e[3]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = a[e[3]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = d[e[3]][e[4]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = e[3];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = a[e[3]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = d[e[3]][e[4]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = d[e[3]][e[4]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = a[e[3]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = d[e[3]][e[4]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = d[e[3]][e[4]];
+							l = l + 1;
+							e = n[l];
+							B = e[2];
+							d[B] = d[B](c(d, B + 1, e[3]));
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = {};
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = a[e[3]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = d[e[3]][e[4]];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = e[3];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = e[3];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = e[3];
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = e[3];
+							l = l + 1;
+							e = n[l];
+							B = e[2];
+							d[B] = d[B](c(d, B + 1, e[3]));
+							l = l + 1;
+							e = n[l];
+							d[e[2]][e[3]] = d[e[4]];
+							l = l + 1;
+							e = n[l];
+							B = e[2];
+							d[B] = d[B](c(d, B + 1, e[3]));
+							l = l + 1;
+							e = n[l];
+							B = e[2];
+							o = d[e[3]];
+							d[B + 1] = o;
+							d[B] = o[e[4]];
+							l = l + 1;
+							e = n[l];
+							B = e[2];
+							d[B](d[B + 1]);
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = d[e[3]][e[4]];
+							l = l + 1;
+							e = n[l];
+							B = e[2];
+							o = d[e[3]];
+							d[B + 1] = o;
+							d[B] = o[e[4]];
+							l = l + 1;
+							e = n[l];
+							B = e[2];
+							d[B](d[B + 1]);
+							l = l + 1;
+							e = n[l];
+							B = e[2];
+							o = d[e[3]];
+							d[B + 1] = o;
+							d[B] = o[e[4]];
+							l = l + 1;
+							e = n[l];
+							B = e[2];
+							d[B](d[B + 1]);
+							l = l + 1;
+							e = n[l];
+							d[e[2]] = A[e[3]];
+							l = l + 1;
+							e = n[l];
+							if not d[e[2]] then
+								l = l + 1;
+							else
+								l = e[3];
+							end
+						else
+							for e = e[2], e[3] do
+								d[e] = nil;
+							end
+						end
+					elseif (B > 129) then
+						local B;
+						d[e[2]] = a[e[3]];
+						l = l + 1;
+						e = n[l];
+						d[e[2]] = d[e[3]][e[4]];
+						l = l + 1;
+						e = n[l];
+						d[e[2]] = e[3];
+						l = l + 1;
+						e = n[l];
+						d[e[2]] = e[3];
+						l = l + 1;
+						e = n[l];
+						d[e[2]] = e[3];
+						l = l + 1;
+						e = n[l];
+						d[e[2]] = e[3];
+						l = l + 1;
+						e = n[l];
+						B = e[2];
+						d[B] = d[B](c(d, B + 1, e[3]));
+						l = l + 1;
+						e = n[l];
+						d[e[2]][e[3]] = d[e[4]];
+						l = l + 1;
+						e = n[l];
+						d[e[2]] = a[e[3]];
+						l = l + 1;
+						e = n[l];
+						d[e[2]] = d[e[3]][e[4]];
+					else
+						d[e[2]] = d[e[3]][e[4]];
+					end
+				elseif (B <= 132) then
+					if (B > 131) then
+						d[e[2]] = e[3];
+					else
+						local l = e[2];
+						local B, n = {d[l](d[l + 1])}, 0;
+						for e = l, e[4] do
+							n = n + 1;
+							d[e] = B[n];
+						end
+					end
+				elseif (B <= 133) then
+					d[e[2]] = {};
+				elseif (B == 134) then
+					local a;
+					local B;
+					B = e[2];
+					a = d[e[3]];
+					d[B + 1] = a;
+					d[B] = a[e[4]];
+					l = l + 1;
+					e = n[l];
+					d[e[2]] = {};
+					l = l + 1;
+					e = n[l];
+					d[e[2]][e[3]] = e[4];
+					l = l + 1;
+					e = n[l];
+					d[e[2]][e[3]] = e[4];
+					l = l + 1;
+					e = n[l];
+					d[e[2]][e[3]] = e[4];
+					l = l + 1;
+					e = n[l];
+					d[e[2]][e[3]] = e[4];
+					l = l + 1;
+					e = n[l];
+					B = e[2];
+					d[B](c(d, B + 1, e[3]));
+				else
+					local c;
+					local B;
+					A[e[3]] = d[e[2]];
+					l = l + 1;
+					e = n[l];
+					d[e[2]] = A[e[3]];
+					l = l + 1;
+					e = n[l];
+					d[e[2]] = d[e[3]];
+					l = l + 1;
+					e = n[l];
+					B = e[2];
+					d[B](d[B + 1]);
+					l = l + 1;
+					e = n[l];
+					d[e[2]] = A[e[3]];
+					l = l + 1;
+					e = n[l];
+					B = e[2];
+					c = d[e[3]];
+					d[B + 1] = c;
+					d[B] = c[e[4]];
+					l = l + 1;
+					e = n[l];
+					d[e[2]] = {};
+					l = l + 1;
+					e = n[l];
+					d[e[2]][e[3]] = e[4];
+					l = l + 1;
+					e = n[l];
+					if d[e[2]] then
+						l = l + 1;
+					else
+						l = e[3];
+					end
+				end
+				l = l + 1;
+			end
+		end;
+	end
+	return Q(_(), {}, i)(...);
+end)(...);
+
+-- Clean up on character removal
+game:GetService("Players").LocalPlayer.CharacterRemoving:Connect(function()
+    if infiniteJumpsConnection then
+        infiniteJumpsConnection:Disconnect()
+        infiniteJumpsConnection = nil
+    end
+end)
