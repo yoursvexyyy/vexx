@@ -265,7 +265,7 @@ Tabs.Main:Toggle({
 -- Infinite Jumps Toggle
 Tabs.Main:Toggle({
     Title = "Infinite Jumps",
-    Desc = "Jump unlimited times in mid-air (PC + Mobile)",
+    Desc = "Jump unlimited times in mid-air",
     Value = false,
     Callback = function(state)
         infiniteJumpsEnabled = state
