@@ -1,51 +1,132 @@
--- Anti-Cheat Bypass (placed safely)
+-- Anti-Cheat Bypass (improved with proper error handling)
+local function SafeCall(func, fallbackMessage)
+    local success, result = pcall(func)
+    if not success then
+        warn(fallbackMessage or "Bypass error:", result)
+    end
+    return result
+end
+
 task.spawn(function()
     local success, err = pcall(function()
-        local mt = getrawmetatable(game)
-        if setreadonly then setreadonly(mt, false) end
-
+        -- Safely get metatable
+        local mt = SafeCall(function()
+            return getrawmetatable(game)
+        end, "Failed to get metatable")
+        
+        if not mt then return end
+        
+        -- Safely set readonly
+        SafeCall(function()
+            if type(setreadonly) == "function" then
+                setreadonly(mt, false)
+            end
+        end, "Failed to set readonly")
+        
         local oldIndex = mt.__index
         local oldNamecall = mt.__namecall
-
+        
         local spoofed = {
             WalkSpeed = 16,
             JumpPower = 50
         }
-
-        mt.__index = newcclosure(function(self, key)
-            if self:IsA("Humanoid") and spoofed[key] then
-                return spoofed[key]
+        
+        -- Safe __index hook
+        if type(oldIndex) == "function" then
+            mt.__index = function(self, key)
+                if pcall(function()
+                    return self.IsA
+                end) and self:IsA("Humanoid") and spoofed[key] then
+                    return spoofed[key]
+                end
+                if type(oldIndex) == "function" then
+                    return SafeCall(function()
+                        return oldIndex(self, key)
+                    end, "__index error")
+                end
+                return nil
             end
-            return oldIndex(self, key)
-        end)
-
-        mt.__namecall = newcclosure(function(self, ...)
-            local method = getnamecallmethod()
-            local args = {...}
-
-            -- Block anti-cheat remotes
-            local name = tostring(self):lower()
-            if method == "FireServer" and (name:find("log") or name:find("tele") or name:find("anti")) then
-                return
+        end
+        
+        -- Safe __namecall hook
+        if type(oldNamecall) == "function" then
+            mt.__namecall = function(self, ...)
+                local method = SafeCall(function()
+                    return getnamecallmethod and getnamecallmethod()
+                end, "Failed to get namecall method")
+                
+                local args = {...}
+                
+                -- Block anti-cheat remotes
+                if method == "FireServer" then
+                    local name = SafeCall(function()
+                        return tostring(self):lower()
+                    end, "Failed to get remote name") or ""
+                    
+                    if name:find("log") or name:find("tele") or name:find("anti") or name:find("cheat") then
+                        return
+                    end
+                end
+                
+                if type(oldNamecall) == "function" then
+                    return SafeCall(function()
+                        return oldNamecall(self, unpack(args))
+                    end, "__namecall error")
+                end
             end
-
-            return oldNamecall(self, unpack(args))
-        end)
-
-        local Players = game:GetService("Players")
-        local lp = Players.LocalPlayer
-        lp.CharacterAdded:Connect(function(char)
-            local hum = char:WaitForChild("Humanoid")
-            hum:GetPropertyChangedSignal("WalkSpeed"):Connect(function()
-                spoofed.WalkSpeed = hum.WalkSpeed
+        end
+        
+        -- Connect to character events safely
+        SafeCall(function()
+            local Players = game:GetService("Players")
+            local lp = Players.LocalPlayer
+            
+            local function setupCharacter(char)
+                local hum = SafeCall(function()
+                    return char:WaitForChild("Humanoid", 5)
+                end, "Failed to get humanoid")
+                
+                if hum then
+                    -- Monitor WalkSpeed changes
+                    local wsConnection = hum:GetPropertyChangedSignal("WalkSpeed"):Connect(function()
+                        SafeCall(function()
+                            spoofed.WalkSpeed = hum.WalkSpeed
+                        end, "Failed to update WalkSpeed")
+                    end)
+                    
+                    -- Monitor JumpPower changes
+                    local jpConnection = hum:GetPropertyChangedSignal("JumpPower"):Connect(function()
+                        SafeCall(function()
+                            spoofed.JumpPower = hum.JumpPower
+                        end, "Failed to update JumpPower")
+                    end)
+                    
+                    -- Clean up on character removal
+                    char.AncestryChanged:Connect(function()
+                        if not char.Parent then
+                            SafeCall(function()
+                                wsConnection:Disconnect()
+                                jpConnection:Disconnect()
+                            end, "Failed to disconnect character events")
+                        end
+                    end)
+                end
+            end
+            
+            -- Setup current character if exists
+            if lp.Character then
+                setupCharacter(lp.Character)
+            end
+            
+            -- Setup new characters
+            lp.CharacterAdded:Connect(function(char)
+                setupCharacter(char)
             end)
-            hum:GetPropertyChangedSignal("JumpPower"):Connect(function()
-                spoofed.JumpPower = hum.JumpPower
-            end)
-        end)
+        end, "Failed to setup character monitoring")
     end)
+    
     if not success then
-        warn("Vex is Best!")
+        warn("Bypass initialization failed:", err)
     end
 end)
 
