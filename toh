@@ -97,7 +97,7 @@ local Tabs = {
     Player = Window:Tab({ Title = "Player", Icon = "user" }),
 }
 
--- Discord Section (kept from first script)
+-- Discord Section
 Tabs.Discord:Section({ Title = "Community" })
 
 Tabs.Discord:Paragraph({
@@ -135,12 +135,6 @@ local killTags = {"kill", "laser", "death", "lava"}
 local godmodeOn = false
 local connections = {}
 
--- Infinite Jumps System
-local infiniteJumpsEnabled = false
-local infiniteJumpsConnection = nil
-local UserInputService = game:GetService("UserInputService")
-local RunService = game:GetService("RunService")
-
 local function isKillPart(part)
     if part:IsA("BasePart") then
         local name = part.Name:lower()
@@ -162,13 +156,11 @@ local function applyGodmode(enabled)
     connections = {}
 
     if enabled then
-        -- Reset character/humanoid on respawn
         player.CharacterAdded:Connect(function(char)
             character = char
             humanoid = char:WaitForChild("Humanoid")
         end)
 
-        -- Health block
         table.insert(connections, humanoid:GetPropertyChangedSignal("Health"):Connect(function()
             if humanoid.Health <= 0 then
                 humanoid.Health = 100
@@ -179,7 +171,7 @@ local function applyGodmode(enabled)
             if isKillPart(part) then
                 local conn = part.Touched:Connect(function(hit)
                     if hit:IsDescendantOf(character) then
-                        humanoid.Health = humanoid.Health -- No-op
+                        humanoid.Health = humanoid.Health
                     end
                 end)
                 table.insert(connections, conn)
@@ -194,67 +186,60 @@ local function applyGodmode(enabled)
     end
 end
 
--- Infinite Jumps Function - FIXED FOR PC & MOBILE
+------------------------------------------------------------------
+-- ✅ NEW INFINITE JUMP SYSTEM (PC + MOBILE)
+------------------------------------------------------------------
+
+local UIS = game:GetService("UserInputService")
+local infiniteJumpsEnabled = false
+local pcConnection = nil
+local mobileConnection = nil
+
+local function doInfiniteJump()
+    local char = player.Character
+    if not char then return end
+
+    local hum = char:FindFirstChild("Humanoid")
+    local root = char:FindFirstChild("HumanoidRootPart")
+
+    if not hum or not root then return end
+
+    hum.Jump = true
+
+    local vel = root.Velocity
+    root.Velocity = Vector3.new(vel.X, 45, vel.Z)
+end
+
 local function setupInfiniteJumps(enabled)
-    if infiniteJumpsConnection then
-        infiniteJumpsConnection:Disconnect()
-        infiniteJumpsConnection = nil
-    end
-    
+    if pcConnection then pcConnection:Disconnect() pcConnection = nil end
+    if mobileConnection then mobileConnection:Disconnect() mobileConnection = nil end
+
     if enabled then
-        infiniteJumpsConnection = RunService.Heartbeat:Connect(function()
-            if not infiniteJumpsEnabled then return end
-            
-            local character = player.Character
-            if not character then return end
-            
-            local humanoid = character:FindFirstChild("Humanoid")
-            if not humanoid then return end
-            
-            -- Check if jump button is pressed (works for both PC and Mobile)
-            local jumpPressed = false
-            
-            -- Check PC keyboard (Space key)
-            if UserInputService:IsKeyDown(Enum.KeyCode.Space) then
-                jumpPressed = true
+        -- PC space key
+        pcConnection = UIS.InputBegan:Connect(function(input, gp)
+            if gp or not infiniteJumpsEnabled then return end
+            if input.KeyCode == Enum.KeyCode.Space then
+                doInfiniteJump()
             end
-            
-            -- Check mobile touch/jump button
-            if UserInputService.TouchEnabled then
-                -- For mobile, we'll check if any touch input exists
-                local touches = UserInputService:GetTouchInputs()
-                if #touches > 0 then
-                    jumpPressed = true
-                end
-            end
-            
-            -- Check if we're in the air
-            local state = humanoid:GetState()
-            local inAir = (state == Enum.HumanoidStateType.Freefall or state == Enum.HumanoidStateType.Jumping)
-            
-            -- If in air and jump is pressed, make character jump
-            if inAir and jumpPressed then
-                humanoid.Jump = true
-                
-                -- Apply upward velocity
-                local rootPart = character:FindFirstChild("HumanoidRootPart")
-                if rootPart then
-                    local currentVelocity = rootPart.Velocity
-                    rootPart.Velocity = Vector3.new(currentVelocity.X, 50, currentVelocity.Z)
-                end
+        end)
+
+        -- MOBILE jump button
+        mobileConnection = UIS.JumpRequest:Connect(function()
+            if infiniteJumpsEnabled then
+                doInfiniteJump()
             end
         end)
     end
 end
 
--- Handle character respawns for infinite jumps
-player.CharacterAdded:Connect(function(char)
-    task.wait(0.5) -- Wait for character to load
-    local newHumanoid = char:WaitForChild("Humanoid")
+player.CharacterAdded:Connect(function()
+    task.wait(0.5)
     if infiniteJumpsEnabled then
         setupInfiniteJumps(true)
     end
 end)
+
+------------------------------------------------------------------
 
 -- Main Tab Section
 Tabs.Main:Section({ Title = "Main Features" })
@@ -277,15 +262,15 @@ Tabs.Main:Toggle({
     end
 })
 
--- Infinite Jumps Toggle - FIXED
+-- Infinite Jumps Toggle
 Tabs.Main:Toggle({
     Title = "Infinite Jumps",
-    Desc = "Jump unlimited times in mid-air",
+    Desc = "Jump unlimited times in mid-air (PC + Mobile)",
     Value = false,
     Callback = function(state)
         infiniteJumpsEnabled = state
         setupInfiniteJumps(state)
-        
+
         WindUI:Notify({
             Title = "Infinite Jumps",
             Content = state and "Enabled!" or "Disabled",
@@ -295,7 +280,7 @@ Tabs.Main:Toggle({
     end
 })
 
--- Teleport to Top (Auto Win) Button
+-- Teleport to Top (Auto Win)
 Tabs.Main:Button({
     Title = "Teleport to Top",
     Desc = "Use this after timer crosses 6:00",
@@ -355,7 +340,7 @@ Tabs.Player:Slider({
     Callback = function(value)
         walkSpeedValue = value
         local char = player.Character or player.CharacterAdded:Wait()
-        local humanoid = char:FindFirstChildOfClass("Humanoid")
+        local humanoid = char:FindChildWhichIsA("Humanoid")
         if humanoid then
             humanoid.WalkSpeed = value
             WindUI:Notify({
@@ -382,7 +367,7 @@ Tabs.Player:Slider({
     Callback = function(value)
         jumpPowerValue = value
         local char = player.Character or player.CharacterAdded:Wait()
-        local humanoid = char:FindFirstChildOfClass("Humanoid")
+        local humanoid = char:FindChildWhichIsA("Humanoid")
         if humanoid then
             humanoid.JumpPower = value
             WindUI:Notify({
@@ -395,9 +380,9 @@ Tabs.Player:Slider({
     end
 })
 
--- Floating button for WindUI (similar to first script)
+-- Floating UI button
 local TweenService = game:GetService("TweenService")
-local UserInputService = game:GetService("UserInputService")
+local UIS = game:GetService("UserInputService")
 
 local ScreenGui = Instance.new("ScreenGui")
 ScreenGui.Parent = game.CoreGui
@@ -467,19 +452,17 @@ ImageButton.InputChanged:Connect(function(input)
     end
 end)
 
-UserInputService.InputChanged:Connect(function(input)
+UIS.InputChanged:Connect(function(input)
     if input == dragInput and isDragging then
         updatePosition(input)
     end
 end)
 
--- Select Discord tab by default
+-- Select Discord tab first
 Window:SelectTab(1)
 
--- Clean up on character removal
-game:GetService("Players").LocalPlayer.CharacterRemoving:Connect(function()
-    if infiniteJumpsConnection then
-        infiniteJumpsConnection:Disconnect()
-        infiniteJumpsConnection = nil
-    end
+-- Cleanup
+game.Players.LocalPlayer.CharacterRemoving:Connect(function()
+    if pcConnection then pcConnection:Disconnect() end
+    if mobileConnection then mobileConnection:Disconnect() end
 end)
