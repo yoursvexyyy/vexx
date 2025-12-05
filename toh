@@ -1,132 +1,117 @@
--- Anti-Cheat Bypass (improved with proper error handling)
-local function SafeCall(func, fallbackMessage)
-    local success, result = pcall(func)
-    if not success then
-        warn(fallbackMessage or "Bypass error:", result)
-    end
-    return result
-end
-
+-- Anti-Cheat Bypass (Standard Executor Version)
 task.spawn(function()
     local success, err = pcall(function()
-        -- Safely get metatable
-        local mt = SafeCall(function()
-            return getrawmetatable(game)
-        end, "Failed to get metatable")
+        -- Get player and setup
+        local Players = game:GetService("Players")
+        local lp = Players.LocalPlayer
         
-        if not mt then return end
+        -- Target speed values
+        local targetWalkSpeed = 16
+        local targetJumpPower = 50
         
-        -- Safely set readonly
-        SafeCall(function()
-            if type(setreadonly) == "function" then
-                setreadonly(mt, false)
-            end
-        end, "Failed to set readonly")
+        -- Remote blocker
+        local ReplicatedStorage = game:GetService("ReplicatedStorage")
+        local blockedRemotes = {}
         
-        local oldIndex = mt.__index
-        local oldNamecall = mt.__namecall
-        
-        local spoofed = {
-            WalkSpeed = 16,
-            JumpPower = 50
-        }
-        
-        -- Safe __index hook
-        if type(oldIndex) == "function" then
-            mt.__index = function(self, key)
-                if pcall(function()
-                    return self.IsA
-                end) and self:IsA("Humanoid") and spoofed[key] then
-                    return spoofed[key]
-                end
-                if type(oldIndex) == "function" then
-                    return SafeCall(function()
-                        return oldIndex(self, key)
-                    end, "__index error")
-                end
-                return nil
-            end
+        -- Function to check if remote should be blocked
+        local function shouldBlockRemote(remote)
+            local remoteName = tostring(remote):lower()
+            return remoteName:find("log") or 
+                   remoteName:find("anti") or 
+                   remoteName:find("cheat") or
+                   remoteName:find("tele") or
+                   remoteName:find("kick") or
+                   remoteName:find("ban")
         end
         
-        -- Safe __namecall hook
-        if type(oldNamecall) == "function" then
-            mt.__namecall = function(self, ...)
-                local method = SafeCall(function()
-                    return getnamecallmethod and getnamecallmethod()
-                end, "Failed to get namecall method")
-                
-                local args = {...}
-                
-                -- Block anti-cheat remotes
-                if method == "FireServer" then
-                    local name = SafeCall(function()
-                        return tostring(self):lower()
-                    end, "Failed to get remote name") or ""
+        -- Hook remotes
+        local function hookRemote(remote)
+            if remote:IsA("RemoteEvent") or remote:IsA("RemoteFunction") then
+                if shouldBlockRemote(remote) then
+                    local oldFireServer = remote.FireServer
+                    local oldInvokeServer = remote.InvokeServer
                     
-                    if name:find("log") or name:find("tele") or name:find("anti") or name:find("cheat") then
-                        return
-                    end
-                end
-                
-                if type(oldNamecall) == "function" then
-                    return SafeCall(function()
-                        return oldNamecall(self, unpack(args))
-                    end, "__namecall error")
-                end
-            end
-        end
-        
-        -- Connect to character events safely
-        SafeCall(function()
-            local Players = game:GetService("Players")
-            local lp = Players.LocalPlayer
-            
-            local function setupCharacter(char)
-                local hum = SafeCall(function()
-                    return char:WaitForChild("Humanoid", 5)
-                end, "Failed to get humanoid")
-                
-                if hum then
-                    -- Monitor WalkSpeed changes
-                    local wsConnection = hum:GetPropertyChangedSignal("WalkSpeed"):Connect(function()
-                        SafeCall(function()
-                            spoofed.WalkSpeed = hum.WalkSpeed
-                        end, "Failed to update WalkSpeed")
-                    end)
-                    
-                    -- Monitor JumpPower changes
-                    local jpConnection = hum:GetPropertyChangedSignal("JumpPower"):Connect(function()
-                        SafeCall(function()
-                            spoofed.JumpPower = hum.JumpPower
-                        end, "Failed to update JumpPower")
-                    end)
-                    
-                    -- Clean up on character removal
-                    char.AncestryChanged:Connect(function()
-                        if not char.Parent then
-                            SafeCall(function()
-                                wsConnection:Disconnect()
-                                jpConnection:Disconnect()
-                            end, "Failed to disconnect character events")
+                    if remote:IsA("RemoteEvent") then
+                        remote.FireServer = function(self, ...)
+                            -- Block the call
+                            return nil
                         end
-                    end)
+                    elseif remote:IsA("RemoteFunction") then
+                        remote.InvokeServer = function(self, ...)
+                            -- Block the call
+                            return nil
+                        end
+                    end
+                    
+                    table.insert(blockedRemotes, remote)
                 end
             end
-            
-            -- Setup current character if exists
-            if lp.Character then
-                setupCharacter(lp.Character)
+        end
+        
+        -- Scan and hook existing remotes
+        local function scanRemotes(instance)
+            for _, child in pairs(instance:GetChildren()) do
+                hookRemote(child)
+                scanRemotes(child)
             end
+        end
+        
+        -- Scan initially
+        scanRemotes(game)
+        
+        -- Monitor for new remotes
+        game.DescendantAdded:Connect(function(child)
+            hookRemote(child)
+        end)
+        
+        -- Speed bypass using a simple loop
+        local function setupCharacter(char)
+            local humanoid = char:WaitForChild("Humanoid")
             
-            -- Setup new characters
-            lp.CharacterAdded:Connect(function(char)
-                setupCharacter(char)
+            -- Maintain speed loop
+            task.spawn(function()
+                while char and char.Parent and humanoid and humanoid.Parent do
+                    -- Set walk speed
+                    if humanoid.WalkSpeed < targetWalkSpeed then
+                        humanoid.WalkSpeed = targetWalkSpeed
+                    end
+                    
+                    -- Set jump power
+                    if humanoid.JumpPower < targetJumpPower then
+                        humanoid.JumpPower = targetJumpPower
+                    end
+                    
+                    task.wait(0.1)
+                end
             end)
-        end, "Failed to setup character monitoring")
+            
+            -- Also monitor property changes
+            humanoid:GetPropertyChangedSignal("WalkSpeed"):Connect(function()
+                if humanoid.WalkSpeed < targetWalkSpeed then
+                    humanoid.WalkSpeed = targetWalkSpeed
+                end
+            end)
+            
+            humanoid:GetPropertyChangedSignal("JumpPower"):Connect(function()
+                if humanoid.JumpPower < targetJumpPower then
+                    humanoid.JumpPower = targetJumpPower
+                end
+            end)
+        end
+        
+        -- Setup current character
+        if lp.Character then
+            setupCharacter(lp.Character)
+        end
+        
+        -- Setup future characters
+        lp.CharacterAdded:Connect(setupCharacter)
+        
+        print("✅ Anti-Cheat bypass loaded successfully!")
     end)
     
     if not success then
-        warn("Bypass initialization failed:", err)
+        warn("⚠️ Anti-Cheat bypass partially loaded:", err)
     end
 end)
 
